@@ -11,6 +11,6 @@ En este espacio documentaremos nuestro proyecto, con la intención de reflejar n
 | . | Nicolas  |  
 | . | Hans |  
 
-##Profesores del curso
+## Profesores del curso
 ---
 * Moises Stevend Meza Rodriguez
