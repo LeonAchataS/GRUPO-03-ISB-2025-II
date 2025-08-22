@@ -1,1 +1,7 @@
-# GRUPO-03-ISB-2025-II
+# Bienvenidos al Repositorio del Grupo 3 - ISB 2025-II
+---
+## Introducción
+¡Bienvenidos al repositorio del Grupo 3 del curso Introducción a Señales Biomédicas 2025-I!
+En este espacio documentaremos nuestro proyecto, con la intención de reflejar nuestro aprendizaje a lo largo del curso. Aquí encontrarán toda la documentación, códigos, reportes y avances del proyecto, organizados de manera clara y estructurada.
+## Integrantes del equipo
+---
