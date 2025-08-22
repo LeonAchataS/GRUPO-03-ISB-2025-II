@@ -8,7 +8,7 @@ En este espacio documentaremos nuestro proyecto, con la intención de reflejar n
 ---
 | Foto  | Presentacion| Contacto |
 |-------|----------|-----------|
-| . | Hola, soy León Achata, estudiante de Ingeniería Biomédica interesado en el área de Ingeniería Clínica, tengo conocimientos de mantenimiento y gestión de equipamiento biomédico y arquitectura hospitalaria. Espero mucho de este curso | leon.achata@upch.pe |
+| . | Estudiante de Ingeniería Biomédica interesado en el área de Ingeniería Clínica, cuento con conocimientos de mantenimiento y gestión de equipamiento biomédico y arquitectura hospitalaria.| leon.achata@upch.pe |
 | . | Nicolas  |  |
 | . | Hans |  |
 
