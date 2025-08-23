@@ -1,4 +1,7 @@
 # Bienvenidos al Repositorio del Grupo 3 - ISB 2025-II
+<p align="center">
+  <img src="Otros/EEG.gif" alt="Hola" width="400"/>
+</p>
 
 ---
 ## Introducción
