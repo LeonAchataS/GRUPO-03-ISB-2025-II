@@ -12,7 +12,7 @@ En este espacio documentaremos nuestro proyecto, con la intención de reflejar n
 | Foto  | Presentacion| Contacto |
 |-------|----------|-----------|
 | . | Estudiante de Ingeniería Biomédica interesado en el área de Ingeniería Clínica, cuento con conocimientos de mantenimiento y gestión de equipamiento biomédico y arquitectura hospitalaria.| leon.achata@upch.pe |
-| . | Nicolas (Presentacion) |  Contacto aca|
+| . | Nicolas (Presentacion) |  nicolas.arango@upch.pe|
 | . | Estudiante de Ingeniería Biomédica (PUCP - UPCH) interesado en el área de estudio de Ingeniería Clínica y Biomecánica. Cuento con conocimientos complementarios en impresión 3D y fundamentos de metrología para equipamiento médico. Tengo altas expectativas del curso, ya que todavía no me decanto por una rama de estudio en particular y no descartaría un futuro interés en el área de Señales e Imágenes Biomédicas. |  hans.navarro@upch.pe |
 
 ## Profesores del curso
