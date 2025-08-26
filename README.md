@@ -2,7 +2,6 @@
 <p align="center">
   <img src="Otros/EEG.gif" alt="Hola" width="400"/>
 </p>
----
 
 ## Introducción
 ---
