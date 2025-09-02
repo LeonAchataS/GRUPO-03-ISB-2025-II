@@ -47,7 +47,7 @@ En este proyecto:
 - [3]He, H., & Wu, D. “Transfer learning for brain–computer interfaces: A Euclidean space data alignment approach” IEEE Trans Biomed Eng, 2019. Fecha de Acceso: Sep. 01, 2025. [En línea]. Recuperado de: https://pubmed.ncbi.nlm.nih.gov/31034407/
 - [4]Lotte, F., et al. “A review of classification algorithms for EEG-based brain–computer interfaces” Journal of Neural Engineering, 2018. Fecha de Acceso: Sep. 01, 2025. [En línea]. Recuperado de: https://pubmed.ncbi.nlm.nih.gov/17409472/
   
-## Aportes al entrgable 1
-- Leon Achate 33.33 %
+## Aportes al entregable 1
+- Leon Achata 33.33 %
 - Nicolas Arango 33.33 %
 - Hans Navarro 33.33 %
