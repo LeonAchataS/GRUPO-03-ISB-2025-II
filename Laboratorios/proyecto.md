@@ -43,9 +43,9 @@ En este proyecto:
 
 ## Referencias Bibliográficas: 
 - [1]World Health Organization: WHO, “Spinal cord injury,” World Health Organization: WHO, Apr. 16, 2024. Fecha de Acceso: Ago. 25, 2025. [En linea]. Recuperado de: https://www.who.int/news-room/fact-sheets/detail/spinal-cord-injury
-- [2]MINSA, “Instituto Nacional de Rehabilitación brindó más de 1500 atenciones en consulta médica a pacientes con diagnóstico de lesión medular,” Gob.pe. Fecha de Acceso: Ago. 25, 2025. [Online]. Recuperado de: https://www.gob.pe/institucion/minsa/noticias/975047-instituto-nacional-de-rehabilitacion-brindo-mas-de-1500-atenciones-en-consulta-medica-a-pacientes-con-diagnostico-de-lesion-medular
-- [3]He, H., & Wu, D. “Transfer learning for brain–computer interfaces: A Euclidean space data alignment approach.” IEEE Trans Biomed Eng, 2019.
-- [4]Lotte, F., et al. “A review of classification algorithms for EEG-based brain–computer interfaces.” Journal of Neural Engineering, 2018.
+- [2]MINSA, “Instituto Nacional de Rehabilitación brindó más de 1500 atenciones en consulta médica a pacientes con diagnóstico de lesión medular,” Gob.pe. Fecha de Acceso: Ago. 25, 2025. [En línea]. Recuperado de: https://www.gob.pe/institucion/minsa/noticias/975047-instituto-nacional-de-rehabilitacion-brindo-mas-de-1500-atenciones-en-consulta-medica-a-pacientes-con-diagnostico-de-lesion-medular
+- [3]He, H., & Wu, D. “Transfer learning for brain–computer interfaces: A Euclidean space data alignment approach” IEEE Trans Biomed Eng, 2019. Fecha de Acceso: Sep. 01, 2025. [En línea]. Recuperado de: https://pubmed.ncbi.nlm.nih.gov/31034407/
+- [4]Lotte, F., et al. “A review of classification algorithms for EEG-based brain–computer interfaces” Journal of Neural Engineering, 2018. Fecha de Acceso: Sep. 01, 2025. [En línea]. Recuperado de: https://pubmed.ncbi.nlm.nih.gov/17409472/
   
 ## Aportes al entrgable 1
 - Leon Achate 33.33 %
