@@ -12,7 +12,7 @@ Según la Organización Mundial de la Salud (OMS), en 2021 había más de 15 mil
 </div>
 
 ## Propuesta de solución
-### Canales frontales EEG para detectar parpadeos en tiempo real y asignarlos a acciones
+### Detección de intención o acción motora mediante EEG utilizando BCI
 <div align="justify">
 El proyecto propone utilizar electroencefalografía (EEG) para detectar imaginación motora; es decir, la actividad cerebral asociada a pensar en abrir o cerrar la mano derecha, la mano izquierda, ambas manos o los pies, sin realizar realmente el movimiento.
 
