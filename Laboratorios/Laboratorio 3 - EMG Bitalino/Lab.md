@@ -27,8 +27,11 @@
 |  **Antebrazo en reposo**  | **Antebrazo sin oposición** | **Antebrazo con oposición** |
 |:------------:|:---------------:|:------------:|
 
+![](Otros/AntebrazoBasal.png)
 
+![](Otros/AntebrazoLibre.png)
 
+![](Otros/AntebrazoLimitado.png)
 </div>
 
 #### Ploteo en Python:
@@ -38,6 +41,7 @@
 
 |  **Bisceps en reposo**  | **Bisceps sin oposición** | **Bisceps con oposición** |
 |:------------:|:---------------:|:------------:|
+
 
 </div>
 
