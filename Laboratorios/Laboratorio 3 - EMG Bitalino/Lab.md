@@ -28,18 +28,15 @@
 |:------------:|:---------------:|:------------:|
 
 <figure>
-  <img src="/Otros/AntebrazoBasal.png">
-  <figcaption>Plots EMG Antebrazo Basal</figcaption>
+  <img src="/Otros/AntebrazoBasal.png" alt="Plots EMG antebrazo basal">
 </figure>
 
 <figure>
-  <img src="/Otros/AntebrazoLibre.png">
-  <figcaption>Plots EMG Antebrazo en movimiento libre</figcaption>
+  <img src="/Otros/AntebrazoLibre.png" alt="Plots EMG Antebrazo en movimiento libre">
 </figure>
 
 <figure>
-  <img src="/Otros/AntebrazoLimitado.png">
-  <figcaption>Plots EMG Antebrazo en movimiento limitado</figcaption>
+  <img src="/Otros/AntebrazoLimitado.png" alt="Plots EMG Antebrazo en movimiento limitado">
 </figure>
 
 </div>
