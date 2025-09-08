@@ -27,11 +27,21 @@
 |  **Antebrazo en reposo**  | **Antebrazo sin oposición** | **Antebrazo con oposición** |
 |:------------:|:---------------:|:------------:|
 
-![Hola](Otros/AntebrazoBasal.png)
+<figure>
+  <img src="/Otros/AntebrazoBasal.png">
+  <figcaption>Plots EMG Antebrazo Basal</figcaption>
+</figure>
 
-![](Otros/AntebrazoLibre.png)
+<figure>
+  <img src="/Otros/AntebrazoLibre.png.png">
+  <figcaption>Plots EMG Antebrazo en movimiento libre</figcaption>
+</figure>
 
-![](Otros/AntebrazoLimitado.png)
+<figure>
+  <img src="/Otros/AntebrazoLimitado.png.png">
+  <figcaption>Plots EMG Antebrazo en movimiento limitado</figcaption>
+</figure>
+
 </div>
 
 #### Ploteo en Python:
