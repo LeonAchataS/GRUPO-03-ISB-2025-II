@@ -11,6 +11,13 @@
 
 ## Materiales
 #### - Bitalino
-#### - Laptop o PC con el programa OpenSignals instalado
+#### - Laptop o PC con conexión Bluetooth y el programa OpenSignals instalado
 #### - 3 electrodos húmedos
 #### - Cámara
+
+## Resultados
+### Antebrazos
+
+### Bisceps
+
+### Trisceps
