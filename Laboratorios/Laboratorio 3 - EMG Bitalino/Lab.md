@@ -33,12 +33,12 @@
 </figure>
 
 <figure>
-  <img src="/Otros/AntebrazoLibre.png.png">
+  <img src="/Otros/AntebrazoLibre.png">
   <figcaption>Plots EMG Antebrazo en movimiento libre</figcaption>
 </figure>
 
 <figure>
-  <img src="/Otros/AntebrazoLimitado.png.png">
+  <img src="/Otros/AntebrazoLimitado.png">
   <figcaption>Plots EMG Antebrazo en movimiento limitado</figcaption>
 </figure>
 
