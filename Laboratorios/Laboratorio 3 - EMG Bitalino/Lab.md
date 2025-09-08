@@ -27,10 +27,13 @@
 |  **Antebrazo en reposo**  | **Antebrazo sin oposición** | **Antebrazo con oposición** |
 |:------------:|:---------------:|:------------:|
 
+### Plots EMG antebrazo basal
 ![Plots EMG antebrazo basal](/Otros/AntebrazoBasal.png)
 
+### Plots EMG Antebrazo en movimiento libre
 ![Plots EMG Antebrazo en movimiento libre](/Otros/AntebrazoLibre.png)
 
+### Plots EMG Antebrazo en movimiento limitado
 ![Plots EMG Antebrazo en movimiento limitado](/Otros/AntebrazoLimitado.png)
 
 </div>
