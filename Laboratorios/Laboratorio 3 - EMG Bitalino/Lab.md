@@ -27,6 +27,9 @@
 |  **Antebrazo en reposo**  | **Antebrazo sin oposición** | **Antebrazo con oposición** |
 |:------------:|:---------------:|:------------:|
 
+
+## Ploteo en Python
+
 ### Plots EMG antebrazo basal
 ![Plots EMG antebrazo basal](/Otros/AntebrazoBasal.png)
 
@@ -38,27 +41,43 @@
 
 </div>
 
-#### Ploteo en Python:
-
 ### Bisceps:
 <div align="center">
 
 |  **Bisceps en reposo**  | **Bisceps sin oposición** | **Bisceps con oposición** |
 |:------------:|:---------------:|:------------:|
 
+## Ploteo en Python
+
+### Plots EMG bíceps basal
+![Plots EMG bíceps basal](/Otros/BicepBasal.png)
+
+### Plots EMG Antebrazo en movimiento libre
+![Plots EMG Bíceps en movimiento libre](/Otros/BicepLibre.png)
+
+### Plots EMG Antebrazo en movimiento limitado
+![Plots EMG Bíceps en movimiento limitado](/Otros/BicepLimitado.png)
 
 </div>
 
-#### Ploteo en Python:
-
-### Trapezio:
+### Trapecio:
 <div align="center">
 
-|  **Trapezio en reposo**  | **Trapezio sin oposición** | **Trapezio con oposición** |
+|  **Trapecio en reposo**  | **Trapecio sin oposición** | **Trapecio con oposición** |
 |:------------:|:---------------:|:------------:|
+
+## Ploteo en Python
+
+### Plots EMG trapecio basal
+![Plots EMG trapecio basal](/Otros/TrapecioBasal.png)
+
+### Plots EMG trapecio en movimiento libre
+![Plots EMG trapecio en movimiento libre](/Otros/TrapecioLibre.png)
+
+### Plots EMG trapecio en movimiento limitado
+![Plots EMG trapecio en movimiento limitado](/Otros/TrapecioLimitado.png)
 
 </div>
 
-#### Ploteo en Python:
 
 ### Bibliografía:
