@@ -27,7 +27,7 @@
 |  **Antebrazo en reposo**  | **Antebrazo sin oposición** | **Antebrazo con oposición** |
 |:------------:|:---------------:|:------------:|
 
-![](Otros/AntebrazoBasal.png)
+![Hola](Otros/AntebrazoBasal.png)
 
 ![](Otros/AntebrazoLibre.png)
 
