@@ -49,6 +49,10 @@
 
 |  **Bisceps en reposo**  | **Bisceps sin oposición** | **Bisceps con oposición** |
 |:------------:|:---------------:|:------------:|
+| <a href="https://www.youtube.com/watch?v=VZrON9HyObU"><img src="https://img.youtube.com/vi/VZrON9HyObU/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=jC3mxfnijYQ"><img src="https://img.youtube.com/vi/jC3mxfnijYQ/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=hM2iXm7oM7Q"><img src="https://img.youtube.com/vi/hM2iXm7oM7Q/0.jpg" width="250" height="140"></a> |
+
+
+
 
 ## Ploteo en Python
 
@@ -68,6 +72,10 @@
 
 |  **Trapecio en reposo**  | **Trapecio sin oposición** | **Trapecio con oposición** |
 |:------------:|:---------------:|:------------:|
+| <a href="https://www.youtube.com/watch?v=s1ZrVtxSbU4"><img src="https://img.youtube.com/vi/s1ZrVtxSbU4/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=bVA3Ll9P19Q"><img src="https://img.youtube.com/vi/bVA3Ll9P19Q/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=Q7mYDY2JNNM"><img src="https://img.youtube.com/vi/Q7mYDY2JNNM/0.jpg" width="250" height="140"></a> |
+
+
+
 
 ## Ploteo en Python
 
