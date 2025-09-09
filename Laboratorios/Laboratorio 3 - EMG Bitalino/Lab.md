@@ -18,7 +18,7 @@
 
 ##### Esta variación de voltaje (señal) puede ser captado y posteriormente medido por dispositivos como lo es Bitalino. La señal oscila entre los 20 Hz a 500 Hz por lo que para poder muestrearla sin que pierda su forma, se tiene que elegir una frequencia de muestreo de al menos 1 kHz. Valor indicado por el teorema de Nyquist en la que se indica que la señal de muestreo debe ser como mínimo el doble de la máxima frequencia de la señal original.
 
-## Objetivos:
+## Objetivos
 #### - Adquirir y procesar señales EMG
 #### - Realizar una correcta configuración del Bitalino
 #### - Explicar el por qué de las variaciones en las señales captadas en los distintos estados
@@ -122,7 +122,7 @@ De cada prueba con los datos recopilados se puede concluir que:
   En la señal temporal se distinguen contracciones menos regulares pero con amplitudes elevadas en ciertos momentos, reflejando un esfuerzo parcial o con restricción. En el FFT, la energía sigue distribuida en un rango amplio pero con menor intensidad que en el movimiento libre. El análisis de Welch muestra un pico más pronunciado alrededor de los 50 Hz, pero con menor dispersión en altas frecuencias, lo que sugiere una activación muscular más controlada o forzada. 
 
 
-## Bibliografía:
+## Bibliografía
 #### [1] Akira Furui, H. Hayashi, and T. Tsuji, “A Scale Mixture-Based Stochastic Model of Surface EMG Signals With Variable Variances,” IEEE Transactions on Biomedical Engineering, vol. 66, no. 10, pp. 2780–2788, Jan. 2019, doi: https://doi.org/10.1109/tbme.2019.2895683.
 #### [2] I. Campanini, C. Disselhorst-Klug, W. Z. Rymer, and R. Merletti, “Surface EMG in Clinical Assessment and Neurorehabilitation: Barriers Limiting Its Use,” Frontiers in Neurology, vol. 11, no. 934, Sep. 2020, doi: https://doi.org/10.3389/fneur.2020.00934.
 #### [3] F. Felici and A. Del Vecchio, “Surface Electromyography: What Limits Its Use in Exercise and Sport Physiology?,” Frontiers in Neurology, vol. 11, no. 11, Nov. 2020, doi: https://doi.org/10.3389/fneur.2020.578504.
