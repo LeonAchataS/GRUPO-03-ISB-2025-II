@@ -74,6 +74,8 @@
 ### Plots EMG trapecio basal
 ![Plots EMG trapecio basal](/Otros/TrapecioBasal.png)
 
+##### El ruido captado por el sensor es menor puesto que se tiene mejor conexión con la tierra. En parte por que el grosor de la piel es menor en la parte de atrás de la oreja en contraste con el apófisis estiloide del cúbito, adicionalmente, el electrodo tiene mayor zona de contacto en el proceso mastoideo.
+
 ### Plots EMG trapecio en movimiento libre
 ![Plots EMG trapecio en movimiento libre](/Otros/TrapecioLibre.png)
 
