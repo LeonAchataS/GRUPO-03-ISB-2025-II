@@ -23,8 +23,9 @@
 ## Resultados
 
 ### Antebrazos:
-
-| Antebrazo en reposo | Antebrazo sin oposición | Antebrazo con oposición |
+<div align="center">
+  
+| **Antebrazo en reposo** | **Antebrazo sin oposición** | **Antebrazo con oposición** |
 |---------------------|-------------------------|-------------------------|
 | <a href="https://www.youtube.com/watch?v=F46p1PJufy0"><img src="https://img.youtube.com/vi/F46p1PJufy0/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=cBVej_iqN20"><img src="https://img.youtube.com/vi/cBVej_iqN20/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=O7S6IrTmvPA"><img src="https://img.youtube.com/vi/O7S6IrTmvPA/0.jpg" width="250" height="140"></a> |
 
