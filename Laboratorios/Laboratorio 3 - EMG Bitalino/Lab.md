@@ -16,6 +16,62 @@
 
 </div>
 
+# Potencial de Acción a lo largo de la membrana celular
+
+El potencial de acción es la secuencia de cambios eléctricos que ocurren en la membrana celular debido al intercambio controlado de iones (Na⁺, K⁺, Ca²⁺) a través de canales específicos.
+
+---
+
+## Fases del Potencial de Acción
+
+### Fase 0 – Despolarización rápida
+- Estímulo alcanza el umbral de excitación.  
+- Se abren canales rápidos de Na⁺ → entrada masiva de Na⁺.  
+- Potencial de membrana pasa de negativo a positivo (despolarización brusca).  
+
+---
+
+### Fase 1 – Repolarización inicial
+- Cierre (inactivación) de canales de Na⁺.  
+- Apertura de canales transitorios de K⁺ → salida de K⁺.  
+- Breve caída inicial del potencial.  
+
+---
+
+### Fase 2 – Meseta (plateau)
+- Se abren canales lentos de Ca²⁺ tipo L → entrada sostenida de Ca²⁺.  
+- Salida moderada de K⁺.  
+- El equilibrio entre entrada de Ca²⁺ y salida de K⁺ genera la meseta, esencial en células cardíacas.  
+
+---
+
+### Fase 3 – Repolarización rápida
+- Cierre de canales de Ca²⁺.  
+- Apertura de canales de K⁺ rectificadores tardíos → salida intensa de K⁺.  
+- Potencial regresa a valores negativos (repolarización).  
+
+---
+
+### Fase 4 – Potencial de reposo
+- La célula vuelve a su estado basal (~ –90 mV en cardiomiocitos).  
+- Mantenido por la bomba Na⁺/K⁺ ATPasa y permeabilidad al K⁺.  
+- La membrana queda lista para un nuevo estímulo.  
+
+---
+
+## Resumen en tabla
+
+| Fase | Evento principal | Canales / Iones |
+|------|-----------------|-----------------|
+| 0    | Despolarización rápida | Na⁺ entra (canales rápidos) |
+| 1    | Repolarización inicial | K⁺ sale (transitorios) |
+| 2    | Meseta | Ca²⁺ entra (lentos), K⁺ sale |
+| 3    | Repolarización rápida | K⁺ sale (rectificadores tardíos) |
+| 4    | Reposo | Bomba Na⁺/K⁺ ATPasa, permeabilidad al K⁺ |
+
+---
+
+
 ##### Esta variación de voltaje (señal) puede ser captado y posteriormente medido por dispositivos como lo es Bitalino. La señal oscila entre los 20 Hz a 500 Hz por lo que para poder muestrearla sin que pierda su forma, se tiene que elegir una frequencia de muestreo de al menos 1 kHz. Valor indicado por el teorema de Nyquist en la que se indica que la señal de muestreo debe ser como mínimo el doble de la máxima frequencia de la señal original.
 
 ## Objetivos
