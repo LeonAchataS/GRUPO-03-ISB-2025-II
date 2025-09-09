@@ -21,30 +21,12 @@
 #### - Cámara
 
 ## Resultados
+
 ### Antebrazos:
 
-<div align="center">
-
-<table>
-  <tr>
-    <th>Antebrazo en reposo</th>
-    <th>Antebrazo sin oposición</th>
-    <th>Antebrazo con oposición</th>
-  </tr>
-  <tr>
-    <td>
-      <iframe width="250" height="200" src="https://www.youtube.com/embed/F46p1PJufy0" frameborder="0" allowfullscreen></iframe>
-    </td>
-    <td>
-      <iframe width="250" height="200" src="https://www.youtube.com/embed/cBvej_iqN20" frameborder="0" allowfullscreen></iframe>
-    </td>
-    <td>
-      <iframe width="250" height="200" src="https://www.youtube.com/embed/O7S6lRxxxxx" frameborder="0" allowfullscreen></iframe>
-    </td>
-  </tr>
-</table>
-</div>
-
+| Antebrazo en reposo | Antebrazo sin oposición | Antebrazo con oposición |
+|---------------------|-------------------------|-------------------------|
+| [![Video](https://img.youtube.com/vi/F46p1PJufy0/0.jpg)](https://www.youtube.com/watch?v=F46p1PJufy0) | [![Video](https://img.youtube.com/vi/cBvej_iqN20/0.jpg)](https://www.youtube.com/watch?v=cBvej_iqN20) | [![Video](https://img.youtube.com/vi/O7S6lRxxxxx/0.jpg)](https://www.youtube.com/watch?v=O7S6lRxxxxx) |
 
 
 ## Ploteo en Python
