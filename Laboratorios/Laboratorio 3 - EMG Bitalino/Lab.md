@@ -23,13 +23,12 @@
 ## Resultados
 
 ### Ploteo en Python
-
-Para el ploteo y análisis de las señales EMG se utilizó Python debido a que ofrece librerías especializadas como NumPy, SciPy, Pandas y Matplotlib, que permiten procesar datos biomédicos de forma eficiente y visualizarlos claramente. El código usado es el siguiente: [Código en Python para el ploteo](/Laboratorios/Laboratorio%203%20-%20EMG%20Bitalino/Ploteo%20Python.ipynb)
+<p align="justify">
+  
+Para el ploteo y análisis de las señales EMG se utilizó Python debido a que ofrece librerías especializadas como NumPy, SciPy, Pandas y Matplotlib, que permiten procesar datos biomédicos de forma eficiente y visualizarlos claramente. El código usado es el siguiente: 
+[Código en Python para el ploteo](/Laboratorios/Laboratorio%203%20-%20EMG%20Bitalino/Ploteo%20Python.ipynb)
 
 En primer lugar, se cargaron los archivos de texto correspondientes a cada músculo (trapecio, antebrazo y bíceps) y se extrajo la señal cruda para graficarla en el dominio del tiempo. Posteriormente, se aplicó la Transformada Rápida de Fourier (FFT) con el fin de observar las componentes de frecuencia que conforman la señal, identificando los rangos de mayor energía muscular. Finalmente, se empleó el método de Welch para obtener la densidad espectral de potencia (PSD), una técnica que mejora la interpretación de la señal al reducir el ruido y suavizar el espectro. Con este procedimiento se logró representar y comparar la actividad muscular en distintas regiones, facilitando el análisis de sus características espectrales.
-
-
-
 
 Para el análisis de las señales EMG se utilizaron dos enfoques en el dominio de la frecuencia: la Transformada Rápida de Fourier (FFT) y el método de Welch. La FFT se eligió porque permite obtener de manera directa y eficiente el espectro de frecuencias de la señal, mostrando la distribución de energía en los distintos componentes armónicos. Esto es útil para identificar picos asociados al ruido eléctrico (como el de 60 Hz) y al mismo tiempo visualizar el rango de frecuencias característico de la actividad muscular (generalmente entre 20 y 450 Hz).
 
@@ -51,6 +50,7 @@ De cada prueba con los datos recopilados se puede decir que:
    
  + Movimiento limitado
    En la señal temporal se distinguen contracciones menos regulares pero con amplitudes elevadas en ciertos momentos, reflejando un esfuerzo parcial o con restricción. En el FFT, la energía sigue distribuida en un rango amplio pero con menor intensidad que en el movimiento libre. El análisis de Welch muestra un pico más pronunciado alrededor de los 50 Hz, pero con menor dispersión en altas frecuencias, lo que sugiere una activación muscular más controlada o forzada. 
+</p>
 
 ## Plot por músculo 
 
