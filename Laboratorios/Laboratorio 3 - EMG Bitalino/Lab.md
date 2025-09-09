@@ -24,7 +24,7 @@
 
 ### Ploteo en Python
 
-Para el ploteo y análisis de las señales EMG se utilizó Python debido a que ofrece librerías especializadas como NumPy, SciPy, Pandas y Matplotlib, que permiten procesar datos biomédicos de forma eficiente y visualizarlos claramente. El código usado es el siguiente: [Código en Pyhton para el ploteo](/Laboratorios/Laboratorio 3 - EMG Bitalino/Ploteo Python.ipynb)
+Para el ploteo y análisis de las señales EMG se utilizó Python debido a que ofrece librerías especializadas como NumPy, SciPy, Pandas y Matplotlib, que permiten procesar datos biomédicos de forma eficiente y visualizarlos claramente. El código usado es el siguiente: [Código en Python para el ploteo](/Laboratorios/Laboratorio%203%20-%20EMG%20Bitalino/Ploteo%20Python.ipynb)
 
 En primer lugar, se cargaron los archivos de texto correspondientes a cada músculo (trapecio, antebrazo y bíceps) y se extrajo la señal cruda para graficarla en el dominio del tiempo. Posteriormente, se aplicó la Transformada Rápida de Fourier (FFT) con el fin de observar las componentes de frecuencia que conforman la señal, identificando los rangos de mayor energía muscular. Finalmente, se empleó el método de Welch para obtener la densidad espectral de potencia (PSD), una técnica que mejora la interpretación de la señal al reducir el ruido y suavizar el espectro. Con este procedimiento se logró representar y comparar la actividad muscular en distintas regiones, facilitando el análisis de sus características espectrales.
 
