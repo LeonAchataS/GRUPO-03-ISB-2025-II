@@ -26,8 +26,8 @@
 
 | Antebrazo en reposo | Antebrazo sin oposición | Antebrazo con oposición |
 |---------------------|-------------------------|-------------------------|
-| <a href="https://youtube.com/shorts/F46p1PJufy0?feature=share"><img src="https://img.youtube.com/vi/F46p1PJufy0/0.jpg" width="250" height="140"></a> |
-| <a href="https://youtube.com/shorts/cBVej_iqN20?feature=share"><img src="https://img.youtube.com/vi/cBvej_iqN20/0.jpg" width="250" height="140"></a> |
+| <a href="https://youtube.com/shorts/F46p1PJufy0?feature=share"><img src="https://img.youtube.com/vi/F46p1PJufy0/0.jpg" width="250" height="140"></a> 
+| <a href="https://youtube.com/shorts/cBVej_iqN20?feature=share"><img src="https://img.youtube.com/vi/cBvej_iqN20/0.jpg" width="250" height="140"></a> 
 | <a href="https://youtube.com/shorts/O7S6IrTmvPA?feature=share"><img src="https://img.youtube.com/vi/O7S6lRxxxxx/0.jpg" width="250" height="140"></a> |
 
 
