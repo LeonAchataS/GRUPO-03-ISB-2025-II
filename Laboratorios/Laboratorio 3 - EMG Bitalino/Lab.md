@@ -27,19 +27,19 @@
 
 <table>
   <tr>
-    <td><b>Antebrazo en reposo</b></td>
-    <td><b>Antebrazo sin oposición</b></td>
-    <td><b>Antebrazo con oposición</b></td>
+    <th>Antebrazo en reposo</th>
+    <th>Antebrazo sin oposición</th>
+    <th>Antebrazo con oposición</th>
   </tr>
   <tr>
     <td>
-      <iframe width="250" height="200" src="https://youtube.com/shorts/F46p1PJufy0?feature=share" frameborder="0" allowfullscreen></iframe>
+      <iframe width="250" height="200" src="https://www.youtube.com/embed/F46p1PJufy0" frameborder="0" allowfullscreen></iframe>
     </td>
     <td>
-      <iframe width="250" height="200" src="https://youtube.com/shorts/cBVej_iqN20?feature=share" frameborder="0" allowfullscreen></iframe>
+      <iframe width="250" height="200" src="https://www.youtube.com/embed/cBvej_iqN20" frameborder="0" allowfullscreen></iframe>
     </td>
     <td>
-      <iframe width="250" height="200" src="https://youtube.com/shorts/O7S6IrTmvPA?feature=share" frameborder="0" allowfullscreen></iframe>
+      <iframe width="250" height="200" src="https://www.youtube.com/embed/O7S6lRxxxxx" frameborder="0" allowfullscreen></iframe>
     </td>
   </tr>
 </table>
