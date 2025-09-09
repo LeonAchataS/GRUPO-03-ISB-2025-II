@@ -22,10 +22,29 @@
 
 ## Resultados
 ### Antebrazos:
+
 <div align="center">
 
-|  **Antebrazo en reposo**  | **Antebrazo sin oposición** | **Antebrazo con oposición** |
-|:------------:|:---------------:|:------------:|
+<table>
+  <tr>
+    <td><b>Antebrazo en reposo</b></td>
+    <td><b>Antebrazo sin oposición</b></td>
+    <td><b>Antebrazo con oposición</b></td>
+  </tr>
+  <tr>
+    <td>
+      <iframe width="250" height="200" src="https://youtube.com/shorts/F46p1PJufy0?feature=share" frameborder="0" allowfullscreen></iframe>
+    </td>
+    <td>
+      <iframe width="250" height="200" src="https://youtube.com/shorts/cBVej_iqN20?feature=share" frameborder="0" allowfullscreen></iframe>
+    </td>
+    <td>
+      <iframe width="250" height="200" src="https://youtube.com/shorts/O7S6IrTmvPA?feature=share" frameborder="0" allowfullscreen></iframe>
+    </td>
+  </tr>
+</table>
+</div>
+
 
 
 ## Ploteo en Python
