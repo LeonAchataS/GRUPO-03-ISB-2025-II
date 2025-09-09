@@ -61,7 +61,12 @@ El potencial de acción es la secuencia de cambios eléctricos que ocurren en la
 | 4    | Reposo | Bomba Na⁺/K⁺ ATPasa, permeabilidad al K⁺ |
 
 
-##### Esta variación de voltaje (señal) puede ser captado y posteriormente medido por dispositivos como lo es Bitalino. La señal oscila entre los 20 Hz a 500 Hz por lo que para poder muestrearla sin que pierda su forma, se tiene que elegir una frequencia de muestreo de al menos 1 kHz. Valor indicado por el teorema de Nyquist en la que se indica que la señal de muestreo debe ser como mínimo el doble de la máxima frequencia de la señal original.
+##### La variación de voltaje generada durante la actividad muscular, conocida como señal de electromiografía (EMG), puede ser captada y posteriormente medida mediante dispositivos especializados como el Bitalino. Este dispositivo está diseñado para la adquisición de señales biológicas, ya que integra electrodos, módulos de preamplificación y conversores analógico-digitales que permiten registrar la actividad eléctrica del músculo de manera no invasiva.  
+
+##### La señal EMG se caracteriza por oscilar en un rango de frecuencias que va aproximadamente de 20 Hz a 500 Hz, conteniendo en ese intervalo la mayor parte de la información fisiológicamente relevante. Para digitalizar esta señal de manera adecuada y evitar distorsiones, se debe cumplir con el teorema de Nyquist, el cual establece que la frecuencia de muestreo debe ser al menos el doble de la máxima frecuencia de la señal original. Por ello, en el caso de la EMG se requiere una frecuencia de muestreo mínima de 1 kHz, lo que permite capturar la forma de la señal sin pérdida significativa de información.  
+
+##### El uso de Bitalino no solo facilita la recopilación de señales EMG en entornos de investigación y docencia, sino que también permite la conexión directa con software de análisis como MATLAB o Python, donde se pueden aplicar técnicas de filtrado, transformadas y algoritmos de reconocimiento de patrones. Esto convierte al dispositivo en una herramienta versátil para el estudio del control motor, la rehabilitación, el diseño de prótesis y la interacción humano-computadora basada en la actividad muscular.
+
 
 ## Objetivos
 #### - Adquirir y procesar señales EMG
