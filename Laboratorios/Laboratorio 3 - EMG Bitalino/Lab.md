@@ -23,7 +23,6 @@
 ## Resultados
 
 ### Ploteo en Python
-<p align="justify">
   
 Para el ploteo y análisis de las señales EMG se utilizó Python debido a que ofrece librerías especializadas como NumPy, SciPy, Pandas y Matplotlib, que permiten procesar datos biomédicos de forma eficiente y visualizarlos claramente. El código usado es el siguiente: 
 [Código en Python para el ploteo](/Laboratorios/Laboratorio%203%20-%20EMG%20Bitalino/Ploteo%20Python.ipynb)
@@ -50,7 +49,6 @@ De cada prueba con los datos recopilados se puede decir que:
    
  + Movimiento limitado
    En la señal temporal se distinguen contracciones menos regulares pero con amplitudes elevadas en ciertos momentos, reflejando un esfuerzo parcial o con restricción. En el FFT, la energía sigue distribuida en un rango amplio pero con menor intensidad que en el movimiento libre. El análisis de Welch muestra un pico más pronunciado alrededor de los 50 Hz, pero con menor dispersión en altas frecuencias, lo que sugiere una activación muscular más controlada o forzada. 
-</p>
 
 ## Plot por músculo 
 
@@ -82,10 +80,6 @@ De cada prueba con los datos recopilados se puede decir que:
 | <a href="https://www.youtube.com/watch?v=VZrON9HyObU"><img src="https://img.youtube.com/vi/VZrON9HyObU/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=jC3mxfnijYQ"><img src="https://img.youtube.com/vi/jC3mxfnijYQ/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=hM2iXm7oM7Q"><img src="https://img.youtube.com/vi/hM2iXm7oM7Q/0.jpg" width="250" height="140"></a> |
 
 
-
-
-## Ploteo en Python
-
 ### Plots EMG bíceps basal
 ![Plots EMG bíceps basal](/Otros/BicepBasal.png)
 
@@ -106,10 +100,6 @@ De cada prueba con los datos recopilados se puede decir que:
 |:------------:|:---------------:|:------------:|
 | <a href="https://www.youtube.com/watch?v=s1ZrVtxSbU4"><img src="https://img.youtube.com/vi/s1ZrVtxSbU4/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=bVA3Ll9P19Q"><img src="https://img.youtube.com/vi/bVA3Ll9P19Q/0.jpg" width="250" height="140"></a> | <a href="https://www.youtube.com/watch?v=Q7mYDY2JNNM"><img src="https://img.youtube.com/vi/Q7mYDY2JNNM/0.jpg" width="250" height="140"></a> |
 
-
-
-
-## Ploteo en Python
 
 ### Plots EMG trapecio basal
 ![Plots EMG trapecio basal](/Otros/TrapecioBasal.png)
