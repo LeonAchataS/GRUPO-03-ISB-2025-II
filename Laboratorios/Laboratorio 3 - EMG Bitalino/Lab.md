@@ -65,6 +65,8 @@ De cada prueba con los datos recopilados se puede decir que:
 
 </div>
 
+##### La señal EMG de superficie se obtiene mediante electrodos colocados sobre el músculo del antebrazo; en reposo, la actividad eléctrica es casi nula, lo que genera una señal muy plana [1]. Al movilizar sin resistencia, solo se reclutan unas pocas unidades motoras, lo que se traduce en una amplitud baja y un patrón irregular. Cuando se aplica oposición o resistencia, se incrementa tanto el reclutamiento de unidades motoras como la frecuencia de descarga, provocando una señal de mayor amplitud y con distribución más densa, lo que refleja un incremento en la fuerza requerida [2], [3].
+
 ### Bisceps:
 <div align="center">
 
@@ -88,6 +90,8 @@ De cada prueba con los datos recopilados se puede decir que:
 
 </div>
 
+##### La señal EMG de superficie del bíceps braquial se registra mediante electrodos en la piel sobre el músculo, y su amplitud está directamente relacionada con la fuerza ejercida y el reclutamiento de unidades motoras. Cuando el músculo está en reposo, la actividad es prácticamente cero, resultando en una señal casi plana. Al contraer sin resistencia, se activan solo algunas unidades motoras, generando una señal de baja amplitud. En cambio, al realizar contracciones con oposición o mayor carga, tanto el reclutamiento de unidades motoras como la frecuencia de descarga aumentan, lo que se refleja en una señal EMG de mayor amplitud y mayor densidad [4], [5]. Además, la ubicación de los electrodos es clave: colocarlos sobre el vientre muscular produce una relación más lineal entre amplitud EMG y fuerza, con menor variabilidad que otras ubicaciones [6]. En resumen, el EMG superficial del bíceps permite observar cómo varía la activación muscular según la demanda de fuerza y la técnica de registro.
+
 ### Trapecio:
 <div align="center">
 
@@ -103,8 +107,6 @@ De cada prueba con los datos recopilados se puede decir que:
 ### Plots EMG trapecio basal
 ![Plots EMG trapecio basal](/Otros/TrapecioBasal.png)
 
-##### El ruido captado por el sensor es menor puesto que se tiene mejor conexión con la tierra. En parte por que el grosor de la piel es menor en la parte de atrás de la oreja en contraste con el apófisis estiloide del cúbito. El electrodo tiene mayor zona de contacto a comparación de colocarlo en el proceso mastoideo como sucedió en los casos anteriores.
-
 ### Plots EMG trapecio en movimiento libre
 ![Plots EMG trapecio en movimiento libre](/Otros/TrapecioLibre.png)
 
@@ -113,5 +115,18 @@ De cada prueba con los datos recopilados se puede decir que:
 
 </div>
 
+##### La señal EMG superficial en el trapecio superior refleja la variación de la actividad muscular según el nivel de contracción. En reposo, la señal es casi plana porque no hay activación significativa. Cuando el hombro se eleva sin resistencia, se activan pocas unidades motoras, lo que produce un registro de baja amplitud e irregularidad. En cambio, al mantener o elevar el hombro contra resistencia, el reclutamiento de fibras aumenta junto con la frecuencia de descarga, lo que se traduce en una señal de mayor amplitud y un patrón más denso [7].
 
 ### Bibliografía:
+#### [1] Akira Furui, H. Hayashi, and T. Tsuji, “A Scale Mixture-Based Stochastic Model of Surface EMG Signals With Variable Variances,” IEEE Transactions on Biomedical Engineering, vol. 66, no. 10, pp. 2780–2788, Jan. 2019, doi: https://doi.org/10.1109/tbme.2019.2895683.
+#### [2] I. Campanini, C. Disselhorst-Klug, W. Z. Rymer, and R. Merletti, “Surface EMG in Clinical Assessment and Neurorehabilitation: Barriers Limiting Its Use,” Frontiers in Neurology, vol. 11, no. 934, Sep. 2020, doi: https://doi.org/10.3389/fneur.2020.00934.
+#### [3] F. Felici and A. Del Vecchio, “Surface Electromyography: What Limits Its Use in Exercise and Sport Physiology?,” Frontiers in Neurology, vol. 11, no. 11, Nov. 2020, doi: https://doi.org/10.3389/fneur.2020.578504.
+#### [4] Z. A. Riley, A. H. Maerz, J. C. Litsey, and R. M. Enoka, “Motor unit recruitment in human biceps brachii during sustained voluntary contractions,” The Journal of physiology, vol. 586, no. 8, pp. 2183–93, 2008, doi: https://doi.org/10.1113/jphysiol.2008.150698.
+#### [5] D. Borzelli, M. Gazzoni, A. Botter, L. Gastaldi, A. d’Avella, and T. M. Vieira, “Contraction level, but not force direction or wrist position, affects the spatial distribution of motor unit recruitment in the biceps brachii muscle,” European Journal of Applied Physiology, vol. 120, no. 4, pp. 853–860, Feb. 2020, doi: https://doi.org/10.1007/s00421-020-04324-6.
+#### [6] N. U. Ahamed, K. Sundaraj, M. Alqahtani, O. Altwijri, Md. A. Ali, and Md. A. Islam, “EMG-force relationship during static contraction: Effects on sensor placement locations on biceps brachii muscle,” Technology and Health Care, vol. 22, no. 4, pp. 505–513, Aug. 2014, doi: https://doi.org/10.3233/thc-140842.
+#### [7] I. Javed et al., “Electromyographic analysis of bilateral upper trapezius muscles at different levels of work-pace among sewing machine operators,” BMC Musculoskeletal Disorders, vol. 25, no. 1, Oct. 2024, doi: https://doi.org/10.1186/s12891-024-07874-4.
+
+### Contribución:
+##### - Leon Achata 33.33%
+##### - Nicolas Arango 33.33%
+##### - Hans Navarro 33.33%
