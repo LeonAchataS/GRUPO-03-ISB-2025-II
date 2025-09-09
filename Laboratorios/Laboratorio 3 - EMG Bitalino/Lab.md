@@ -1,4 +1,13 @@
 # Laboratorio 3 lectura de EMG con Bitalino
+
+## Tabla de Contenido
+- [Introducción](#introducción)
+- [Objetivos](#objetivos)
+- [Materiales](#materiales)
+- [Ploteo en Python](#ploteo-en-python)
+- [Resultados](#resultados)
+- [Bibliografía](#bibliografía)
+
 ## Introducción
 ##### Cada que se desea mover un músculo se realiza la contracción y relajación de las fibras de miosina mediante la producción de potenciales de acción. Estos en sí estan mediados por la variación de potencial eléctrico a lo largo de la membrana celular debido al intercambio iónico:
 <div align="center">
@@ -20,9 +29,7 @@
 #### - 3 electrodos húmedos
 #### - Cámara
 
-## Resultados
-
-### Ploteo en Python
+## Ploteo en Python
   
 Para el ploteo y análisis de las señales EMG se utilizó Python debido a que ofrece librerías especializadas como NumPy, SciPy, Pandas y Matplotlib, que permiten procesar datos biomédicos de forma eficiente y visualizarlos claramente. El código usado es el siguiente: <br>
 [Código en Python para el ploteo](/Laboratorios/Laboratorio%203%20-%20EMG%20Bitalino/Ploteo%20Python.ipynb)
@@ -39,18 +46,7 @@ Por cada músculo se realizó 3 pruebas:
  + Movimiento libre
  + Movimiento limitado 
 
-De cada prueba con los datos recopilados se puede decir que:
-
- + Plot Basal<br>
-   En la señal temporal se observa una actividad casi constante con pocas variaciones, lo que refleja el estado de reposo muscular. En el espectro FFT aparecen picos aislados asociados principalmente a ruido de red eléctrica (60 Hz) y armónicos, mientras que la mayor parte de la energía es baja. En el método de Welch, la densidad espectral de potencia confirma que la señal se mantiene estable con picos definidos en frecuencias específicas, típicos de ruido más que de contracción muscular.
-
- + Movimiento libre<br>
-   En la señal temporal se aprecian contracciones claras, repetitivas y de mayor amplitud, lo que indica un mayor reclutamiento de fibras musculares durante el movimiento voluntario. En el FFT, la energía se distribuye en un rango más amplio de frecuencias (principalmente entre 50 y 150 Hz), lo cual es característico de la activación muscular real. El Welch suaviza la señal espectral y muestra un pico predominante en bajas frecuencias, junto con una pendiente descendente, típico de una contracción dinámica con alta variabilidad.
-   
- + Movimiento limitado<br>
-  En la señal temporal se distinguen contracciones menos regulares pero con amplitudes elevadas en ciertos momentos, reflejando un esfuerzo parcial o con restricción. En el FFT, la energía sigue distribuida en un rango amplio pero con menor intensidad que en el movimiento libre. El análisis de Welch muestra un pico más pronunciado alrededor de los 50 Hz, pero con menor dispersión en altas frecuencias, lo que sugiere una activación muscular más controlada o forzada. 
-
-## Plot por músculo 
+## Resultados
 
 ### Antebrazos:
 <div align="center">
@@ -72,7 +68,7 @@ De cada prueba con los datos recopilados se puede decir que:
 
 ##### La señal EMG de superficie se obtiene mediante electrodos colocados sobre el músculo del antebrazo; en reposo, la actividad eléctrica es casi nula, lo que genera una señal muy plana [1]. Al movilizar sin resistencia, solo se reclutan unas pocas unidades motoras, lo que se traduce en una amplitud baja y un patrón irregular. Cuando se aplica oposición o resistencia, se incrementa tanto el reclutamiento de unidades motoras como la frecuencia de descarga, provocando una señal de mayor amplitud y con distribución más densa, lo que refleja un incremento en la fuerza requerida [2], [3].
 
-### Bisceps:
+### Biceps:
 <div align="center">
 
 |  **Bisceps en reposo**  | **Bisceps sin oposición** | **Bisceps con oposición** |
@@ -114,7 +110,19 @@ De cada prueba con los datos recopilados se puede decir que:
 
 ##### La señal EMG superficial en el trapecio superior refleja la variación de la actividad muscular según el nivel de contracción. En reposo, la señal es casi plana porque no hay activación significativa. Cuando el hombro se eleva sin resistencia, se activan pocas unidades motoras, lo que produce un registro de baja amplitud e irregularidad. En cambio, al mantener o elevar el hombro contra resistencia, el reclutamiento de fibras aumenta junto con la frecuencia de descarga, lo que se traduce en una señal de mayor amplitud y un patrón más denso [7].
 
-### Bibliografía:
+De cada prueba con los datos recopilados se puede concluir que:
+
+ + Plot Basal<br>
+   En la señal temporal se observa una actividad casi constante con pocas variaciones, lo que refleja el estado de reposo muscular. En el espectro FFT aparecen picos aislados asociados principalmente a ruido de red eléctrica (60 Hz) y armónicos, mientras que la mayor parte de la energía es baja. En el método de Welch, la densidad espectral de potencia confirma que la señal se mantiene estable con picos definidos en frecuencias específicas, típicos de ruido más que de contracción muscular.
+
+ + Movimiento libre<br>
+   En la señal temporal se aprecian contracciones claras, repetitivas y de mayor amplitud, lo que indica un mayor reclutamiento de fibras musculares durante el movimiento voluntario. En el FFT, la energía se distribuye en un rango más amplio de frecuencias (principalmente entre 50 y 150 Hz), lo cual es característico de la activación muscular real. El Welch suaviza la señal espectral y muestra un pico predominante en bajas frecuencias, junto con una pendiente descendente, típico de una contracción dinámica con alta variabilidad.
+   
+ + Movimiento limitado<br>
+  En la señal temporal se distinguen contracciones menos regulares pero con amplitudes elevadas en ciertos momentos, reflejando un esfuerzo parcial o con restricción. En el FFT, la energía sigue distribuida en un rango amplio pero con menor intensidad que en el movimiento libre. El análisis de Welch muestra un pico más pronunciado alrededor de los 50 Hz, pero con menor dispersión en altas frecuencias, lo que sugiere una activación muscular más controlada o forzada. 
+
+
+## Bibliografía:
 #### [1] Akira Furui, H. Hayashi, and T. Tsuji, “A Scale Mixture-Based Stochastic Model of Surface EMG Signals With Variable Variances,” IEEE Transactions on Biomedical Engineering, vol. 66, no. 10, pp. 2780–2788, Jan. 2019, doi: https://doi.org/10.1109/tbme.2019.2895683.
 #### [2] I. Campanini, C. Disselhorst-Klug, W. Z. Rymer, and R. Merletti, “Surface EMG in Clinical Assessment and Neurorehabilitation: Barriers Limiting Its Use,” Frontiers in Neurology, vol. 11, no. 934, Sep. 2020, doi: https://doi.org/10.3389/fneur.2020.00934.
 #### [3] F. Felici and A. Del Vecchio, “Surface Electromyography: What Limits Its Use in Exercise and Sport Physiology?,” Frontiers in Neurology, vol. 11, no. 11, Nov. 2020, doi: https://doi.org/10.3389/fneur.2020.578504.
