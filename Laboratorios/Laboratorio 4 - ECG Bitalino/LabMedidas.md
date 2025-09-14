@@ -1,3 +1,3 @@
 ## Introducción
-#####
-hola
+##### La señal electrocardiográfica (ECG) refleja la actividad eléctrica del corazón generada por la despolarización y repolarización de las fibras miocárdicas. Cada ciclo cardíaco produce un patrón característico, donde la onda P representa la activación auricular, el complejo QRS la activación ventricular y la onda T la repolarización de los ventrículos. Estas variaciones de potencial se originan en el nodo sinoauricular, que actúa como marcapasos fisiológico, y se propagan a través del sistema de conducción cardíaco. Al colocar electrodos en la superficie corporal, es posible registrar estas diferencias de voltaje y transformarlas en una señal que permite evaluar la función eléctrica del corazón.
+![Onda PQRST](https://www.researchgate.net/profile/Da-Diaz-Romero/publication/275044917/figure/fig3/AS:365413100736514@1464132680362/Figura-6-Electrocardiograma-normal-de-la-actividad-electrica-del-corazon-La-onda-P-es.png)
