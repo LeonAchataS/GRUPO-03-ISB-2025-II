@@ -194,7 +194,6 @@ La señal ECG se procesa secuencialmente:
 **Características esperadas del ECG en reposo:**
 
 - **Ritmo sinusal normal**: Originado en el nodo sinoauricular, con regularidad en los intervalos R-R
-- **Frecuencia cardíaca**: 60-100 latidos por minuto (rango normal para adultos en reposo)
 - **Morfología de ondas**: 
   - Onda P: Duración <120 ms, amplitud <2.5 mV
   - Complejo QRS: Duración 80-120 ms, morfología característica
@@ -203,6 +202,9 @@ La señal ECG se procesa secuencialmente:
   - PR: 120-200 ms
   - QT: Corregido según frecuencia cardíaca (QTc <440 ms en hombres, <460 ms en mujeres)
 - **Artefactos mínimos**: Debido a la ausencia de movimiento y respiración regular
+
+### Plots EMG antebrazo basal
+![Plots ECG basal](/Otros/ECG%20%Basal.png)
 
 ### Maniobra de Apnea (Mantenimiento de Respiración)
 
