@@ -204,7 +204,7 @@ La señal ECG se procesa secuencialmente:
 - **Artefactos mínimos**: Debido a la ausencia de movimiento y respiración regular
 
 ### Plots EMG antebrazo basal
-![Plots ECG basal](/Otros/ECG%20%Basal.png)
+![Plots ECG basal](/Otros/ECG%20Basal.png)
 
 ### Maniobra de Apnea (Mantenimiento de Respiración)
 
