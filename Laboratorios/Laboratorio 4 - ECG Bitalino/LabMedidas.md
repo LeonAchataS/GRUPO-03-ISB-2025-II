@@ -203,8 +203,11 @@ La señal ECG se procesa secuencialmente:
   - QT: Corregido según frecuencia cardíaca (QTc <440 ms en hombres, <460 ms en mujeres)
 - **Artefactos mínimos**: Debido a la ausencia de movimiento y respiración regular
 
-### Plots EMG antebrazo basal
-![Plots ECG basal](/Otros/ECG%20basal.png)
+### Plot ECG Basal
+![Plot ECG basal](/Otros/ECG%20basal.png)
+
+### Conteo de picos R y cálculo BPM
+![BPM Basal](/Otros/Conteo%20basal.png)
 
 ### Maniobra de Apnea (Mantenimiento de Respiración)
 
@@ -221,14 +224,11 @@ La señal ECG se procesa secuencialmente:
   - Si se acompaña de maniobra de Valsalva: cambios más marcados
   - Variaciones en la morfología por cambios en el retorno venoso
 
-### Recuperación Post-Apnea (1 minuto después)
+### Plot ECG manteniendo la respiración
+![Plot ECG resp](/Otros/ECG%20Apnea.png)
 
-**Respuesta de recuperación:**
-
-- **Taquicardia compensatoria**: Aumento transitorio de frecuencia cardíaca por activación simpática
-- **Variabilidad de frecuencia cardíaca**: Mayor dispersión en intervalos R-R durante el restablecimiento
-- **Normalización progresiva**: Retorno gradual a patrones basales en 2-3 minutos
-- **Cambios en la repolarización**: Posibles variaciones en onda T durante la readaptación
+### Conteo de picos R y cálculo BPM
+![BPM resp](/Otros/Conteo%20Apnea.png)
 
 ### Actividad Física Inmediata
 
@@ -250,6 +250,12 @@ La señal ECG se procesa secuencialmente:
   - Posible aumento de amplitud de QRS por incremento del gasto cardíaco
 - **Artefactos de movimiento**: Mayor presencia si el registro no se realiza en reposo post-ejercicio
 - **Recuperación**: Patrón de desaceleración gradual en los minutos posteriores
+
+### Plot ECG agitado
+![Plot ECG agitado](/Otros/ECG%20Agitado.png)
+
+### Conteo de picos R y cálculo BPM
+![BPM Agitado](/Otros/Conteo%20Agitado.png)
 
 ### Análisis Comparativo
 
