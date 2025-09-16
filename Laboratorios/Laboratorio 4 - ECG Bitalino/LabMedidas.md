@@ -207,7 +207,7 @@ La señal ECG se procesa secuencialmente:
 ![Plot ECG basal](/Otros/ECG%20basal.png)
 
 ### Conteo de picos R y cálculo BPM
-![BPM Basal](/Otros/Conteo%20basal.png)
+![BPM Basal](/Otros/Conteo%20Basal.png)
 
 ### Maniobra de Apnea (Mantenimiento de Respiración)
 
