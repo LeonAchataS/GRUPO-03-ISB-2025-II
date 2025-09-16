@@ -151,8 +151,6 @@ La señal ECG se procesa secuencialmente:
 - Computadora con conectividad Bluetooth y software OpenSignals instalado
 - Tres electrodos desechables con gel conductor
 - Cables de conexión para ECG
-- Alcohol isopropílico para limpieza de la piel
-- Gasas estériles
 - Cronómetro
 - Cámara para documentación
 
