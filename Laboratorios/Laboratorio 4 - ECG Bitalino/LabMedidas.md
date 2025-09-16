@@ -19,11 +19,13 @@
 ### Reposo:
 <div align="center">
 
-| <a href="https://www.youtube.com/watch?v=xW7y7veXIAQ"><img src="https://img.youtube.com/vi/xW7y7veXIAQ/0.jpg" width="250" height="140"></a> | 
-
+ <a href="https://www.youtube.com/watch?v=xW7y7veXIAQ"><img src="https://img.youtube.com/vi/xW7y7veXIAQ/0.jpg" width="250" height="140"></a> 
 
 #### Manteniendo la respiración:
+<div align="center">
 
+ <a href="https://www.youtube.com/watch?v=9ZFO6JZfvcw"><img src="https://img.youtube.com/vi/9ZFO6JZfvcw/0.jpg" width="250" height="140"></a> 
+ 
 #### 1 minuto después de mantener la respiración:
 
 ### Imediatamente despupes de realizar actividad física:
