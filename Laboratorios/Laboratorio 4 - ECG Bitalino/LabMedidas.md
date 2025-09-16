@@ -10,6 +10,7 @@
 6. [Materiales](#materiales)
 7. [Metodología](#metodología)
 8. [Resultados](#resultados)
+9. [Bibliografía](#Bibliografía)
 
 ## Introducción
 
@@ -274,6 +275,16 @@ La señal ECG se procesa secuencialmente:
 - Posibles artefactos durante maniobras respiratorias
 - Artefactos de movimiento post-ejercicio
 
----
+## Bibliografía
 
-*Este documento constituye un protocolo estándar para la adquisición y análisis de señales ECG utilizando el sistema Bitalino, proporcionando las bases teóricas y metodológicas para la interpretación de los hallazgos electrocardiográficos en diferentes estados fisiológicos.*
+#### [1] J. Malmivuo and R. Plonsey, Bioelectromagnetism: Principles and Applications of Bioelectric and Biomagnetic Fields. Oxford, U.K.: Oxford Univ. Press, 1995, ch. 15, pp. 308–342.
+#### [2] D. Batista, H. Silva, A. Fred, C. Moreira, M. Reis, and H. A. Ferreira, “Benchmarking of the BITalino biomedical toolkit against an established gold standard,” Healthcare Technology Letters, vol. 6, no. 2, pp. 32–36, 2019, doi: 10.1049/htl.2018.5037.
+#### [3] H. P. da Silva, J. Guerreiro, A. Lourenço, A. L. Fred, and R. Martins, “BITalino: A novel hardware framework for physiological computing,” in Proc. Int. Conf. Physiological Computing Systems, 2014, pp. 246–253, doi: 10.5220/0004727802460253.
+#### [4] L. Sörnmo and P. Laguna, Bioelectrical Signal Processing in Cardiac and Neurological Applications. Burlington, MA, USA: Academic Press, 2005, ch. 3, pp. 453–566.
+#### [5] G. D. Clifford, F. Azuaje, and P. E. McSharry, Advanced Methods and Tools for ECG Data Analysis. Boston, MA, USA: Artech House, 2006, ch. 2, pp. 55–99.
+#### [6] Task Force of the European Society of Cardiology and the North American Society of Pacing and Electrophysiology, “Heart rate variability: Standards of measurement, physiological interpretation and clinical use,” Circulation, vol. 93, no. 5, pp. 1043–1065, 1996, doi: 10.1161/01.CIR.93.5.1043.
+
+### Contribución:
+##### - Leon Achata 33.33%
+##### - Nicolas Arango 33.33%
+##### - Hans Navarro 33.33%
