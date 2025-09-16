@@ -18,6 +18,7 @@
 ## Resultados
 ### Reposo:
  <a href="https://www.youtube.com/watch?v=xW7y7veXIAQ"><img src="https://img.youtube.com/vi/xW7y7veXIAQ/0.jpg" width="250" height="140"></a> 
+
 El resultado esperado de la lectura del ECG para cuando el participante está en reposo:
 - Ritmo sinusal normal (regular, de origen en el nodo sinusal).
 - Frecuencia cardíaca en rango normal de reposo (aprox. 60–100 latidos por minuto en adultos sanos).
@@ -25,12 +26,14 @@ El resultado esperado de la lectura del ECG para cuando el participante está en
 - Baja presencia de artefactos en la señal, debido a la ausencia de movimiento.
 
 #### Manteniendo la respiración:
+
 El resultado esperado de la lectura del ECG del participante mientras mantiene la respiración:
 - Durante los primeros segundos puede observarse ligera bradicardia (disminución de la frecuencia cardíaca) por estimulación vagal.
 - Al prolongarse la apnea, puede aparecer variabilidad en la amplitud de las ondas R o cambios sutiles en la frecuencia cardíaca.
 - Si la apnea se acompaña de maniobra de Valsalva (esfuerzo al contener el aire), pueden verse variaciones más marcadas en la frecuencia y morfología de la señal.
  
 #### 1 minuto después de mantener la respiración:
+
 Despues de aguantar la respiración por un lapso de tiempo se podría observar lo suguiente:
 - Se produce una taquicardia transitoria por activación simpática.
 - Los intervalos R-R muestran mayor variabilidad (respuesta al restablecimiento de la oxigenación).
@@ -38,6 +41,7 @@ Despues de aguantar la respiración por un lapso de tiempo se podría observar l
 
 ### Imediatamente despupes de realizar actividad física:
  <a href="https://www.youtube.com/watch?v=9ZFO6JZfvcw"><img src="https://img.youtube.com/vi/9ZFO6JZfvcw/0.jpg" width="250" height="140"></a> 
+
 El resultado esperado de la lectura del ECG cuando el participante se somete a desgaste físico:
 - Aumento de la frecuencia cardíaca (taquicardia fisiológica >100 lpm).
 - Intervalo R-R más corto (reflejando la aceleración de los latidos).
