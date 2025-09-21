@@ -22,3 +22,30 @@
 - Cables de conexión para ECG
 - Cronómetro
 - Cámara para documentación
+
+## Metodología
+
+### Preparación del Sujeto
+
+1. **Limpieza de la piel**: Aplicar alcohol isopropílico en las zonas de colocación de electrodos
+2. **Colocación de electrodos**:
+   - Electrodo positivo: Frente parte izquierda por encima del ojo izquierdo
+   - Electrodo negativo: Frente parte dereca por encima del ojo dereco
+   - Electrodo de referencia: Apófisis Mastoide derecho
+3. **Verificación de impedancia**: Confirmar buena conductividad (<10 kΩ)
+
+### Protocolo de Adquisición
+
+1. **Calibración del sistema**: Verificar ganancia y offset
+2. **Registro basal**: 30 segundos completamente relajado con ojos cerrados sin moverlos, ni contraer ningún músculo del cuerpo
+3. **Fijar Vista**: 2 minutos mirando a un punto en específico
+4. **Resta desde 100**: Resta desde 100 bajando cada 7 unidades, indicar el investigador el momento que se alcanza un valor menor a cero.
+5. **Parpadeo en Patrón**: Parpadeos cada dos segundos por 1 minuto, realizado tres veces en total.
+6. **Música**: Colocar 30s de ruido blanco o relajante y después colocar 30s de ruido estridente/música fuerte
+
+### Condiciones de Registro
+
+- Ambiente silencioso, con temperatura controlada, luces apagadas y ruido al mínimo
+- Minimización de fuentes de interferencia electromagnética
+- Sujeto relajado y en posición cómoda
+- Registro continuo con anotación de eventos
