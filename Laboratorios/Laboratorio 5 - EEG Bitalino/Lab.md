@@ -99,7 +99,7 @@ Durante la condición basal se observó una actividad EEG característica del es
 
 ### Mirada Fija
 
-![EEGFijo](/Otros/EEGFijo.png)
+![EEGFijos](/Otros/EEGFijo.png)
 *Figura 5: Señal EEG durante tarea de mirada fija*
 
 ![FijoSuavizada](/Otros/FijoSuavizada.png)
