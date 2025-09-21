@@ -6,3 +6,19 @@
 ##### Yendo a detalle con la actividad fisilógica en sí, las señales que capta el EEG no provienen de los potenciales de acción individuales, sino de los potenciales postsinápticos generados principalmente en las dendritas de las neuronas piramidales de la corteza. Cuando un neurotransmisor se libera en la sinapsis, provoca la apertura de canales iónicos en la membrana postsináptica, produciendo corrientes locales que cambian el voltaje de esa región. Estas corrientes son relativamente lentas y sostenidas en comparación con los potenciales de acción, lo que permite que se sumen espacial y temporalmente entre muchas neuronas.
 
 ##### Cuando grandes poblaciones de neuronas piramidales se activan de forma sincrónica y están alineadas perpendicularmente a la superficie cortical, los campos eléctricos generados se combinan y se propagan a través del tejido cerebral, líquido cefalorraquídeo, cráneo y cuero cabelludo. Los electrodos del EEG en la superficie registran estas diferencias de potencial, que aparecen como ondas de distinta frecuencia y amplitud según el grado de sincronización y la actividad de las redes neuronales subyacentes.
+
+## Objetivos
+
+- Adquirir señales EEG de calidad utilizando el sistema Bitalino
+- Implementar y evaluar técnicas de filtrado digital para mejorar la calidad de la señal
+- Analizar las variaciones electroencefalográficas asociadas con diferentes estados de actividad mental
+- Correlacionar los hallazgos electroencefalográficos con los mecanismos fisiológicos subyacentes
+
+## Materiales
+
+- Sistema Bitalino con módulo ECG
+- Computadora con conectividad Bluetooth y software OpenSignals instalado
+- Tres electrodos desechables con gel conductor
+- Cables de conexión para ECG
+- Cronómetro
+- Cámara para documentación
