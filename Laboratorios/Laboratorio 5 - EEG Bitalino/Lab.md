@@ -83,6 +83,12 @@ Para cada registro se aplicaron los tres métodos de obtención de envolvente me
 
 ### Condición Basal
 
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=pC-5w1MCEW8"><img src="https://img.youtube.com/vi/pC-5w1MCEW8/0.jpg" width="250" height="140"></a>
+
+</div>
+
 ![EEGBasal](/Otros/EEGBasal.png)
 *Figura 1: Señal EEG registrada durante condición basal*
 
@@ -98,6 +104,12 @@ Para cada registro se aplicaron los tres métodos de obtención de envolvente me
 Durante la condición basal se observó una actividad EEG característica del estado de reposo, con predominio de ondas alpha y fluctuaciones regulares de amplitud.
 
 ### Mirada Fija
+
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=Yr1863yniQw"><img src="https://img.youtube.com/vi/Yr1863yniQw/0.jpg" width="250" height="140"></a>
+
+</div>
 
 ![EEGFijos](/Otros/EEGFijos.png)
 *Figura 5: Señal EEG durante tarea de mirada fija*
@@ -131,6 +143,12 @@ La segunda medición basal confirmó la reproducibilidad de los patrones observa
 
 ### Parpadeo
 
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=vX9CmF37sdE"><img src="https://img.youtube.com/vi/vX9CmF37sdE/0.jpg" width="250" height="140"></a>
+
+</div>
+
 ![EEGParpadeo](/Otros/EEGParpadeo.png)
 *Figura 13: Señal EEG durante parpadeo voluntario*
 
@@ -146,6 +164,11 @@ La segunda medición basal confirmó la reproducibilidad de los patrones observa
 El parpadeo voluntario generó artefactos característicos de alta amplitud, claramente identificables en todas las envolventes calculadas.
 
 ### Tarea de Resta
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=PRqXgp5sa1Y"><img src="https://img.youtube.com/vi/PRqXgp5sa1Y/0.jpg" width="250" height="140"></a>
+
+</div>
 
 ![EEGResta](/Otros/EEGResta.png)
 *Figura 17: Señal EEG durante tarea de resta mental*
@@ -162,6 +185,11 @@ El parpadeo voluntario generó artefactos característicos de alta amplitud, cla
 Durante la tarea cognitiva de resta mental se observó un incremento en la actividad beta, indicativo del procesamiento cognitivo activo.
 
 ### Escuchando Huayno
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=QdUHd7DdGRo"><img src="https://img.youtube.com/vi/QdUHd7DdGRo/0.jpg" width="250" height="140"></a>
+
+</div>
 
 ![EEGHuayno](/Otros/EEGHuayno.png)
 *Figura 21: Señal EEG durante escucha de música tradicional*
