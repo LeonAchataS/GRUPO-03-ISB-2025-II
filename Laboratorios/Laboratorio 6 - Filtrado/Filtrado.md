@@ -321,3 +321,9 @@ Los resultados obtenidos demuestran la importancia de seleccionar el filtro apro
 [8] C. J. De Luca, L. D. Gilmore, M. Kuznetsov, and S. H. Roy, "Filtering the surface EMG signal: Movement artifact and baseline noise contamination," *Journal of Biomechanics*, vol. 43, no. 8, pp. 1573–1579, 2010.
 
 [9] M. Boyer, L. Bouyer, J. S. Roy, and A. Campeau-Lecours, "Reducing Noise, Artifacts and Interference in Single-Channel EMG Signals: A Review," *Sensors*, vol. 23, no. 6, p. 2927, 2023.
+
+
+## Contribución:
+##### - Leon Achata 33.33%
+##### - Nicolas Arango 33.33%
+##### - Hans Navarro 33.33%
