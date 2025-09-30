@@ -1,127 +1,323 @@
-## Introducción 
-##### En el procesamiento de señales biomédicas, como ECG, EEG o EMG, el ruido y los artefactos pueden interferir con la interpretación clínica y la recuperación de parámetros. El filtrado digital es actualmente el método principal para eliminar la señal no deseada causada por interferencias externas, como el ruido de la línea eléctrica, la contracción muscular o la deriva de baja frecuencia. Los filtros están diseñados para preservar las características deseadas de la señal y mejorar la relación señal-ruido, lo que facilita la visualización y el procesamiento automático. Además, el filtrado computacional ofrece una solución mejorada en comparación con los métodos analógicos convencionales, puesto que es más adaptable. Sea al ajustar la frecuencia de corte, la pendiente y el orden del filtro sin necesidad de modificar el hardware. Esto produce un procesamiento más preciso y reproducible, especialmente ventajoso en entornos clínicos y de investigación, donde la calidad de la señal influye directamente en la precisión del diagnóstico y el desarrollo de nuevos dispositivos biomédicos. En el caso específico de este laboratorio se van a procesar dos señales EMG y dos ECG:
+# Filtrado Digital de Señales Biomédicas: ECG y EMG
 
+## Tabla de Contenidos
 
-### ECG:
-##### Se suele empelar filtros de duración finita (FIR) [1]. Para el uso de ventanas se recomienda el uso del tipo Hamming [2].
+1. [Introducción](#introducción)
+2. [Señales Biomédicas](#señales-biomédicas)
+   - 2.1 [Electrocardiograma (ECG)](#electrocardiograma-ecg)
+   - 2.2 [Electromiografía (EMG)](#electromiografía-emg)
+3. [Fundamentos del Filtrado Digital](#fundamentos-del-filtrado-digital)
+   - 3.1 [Filtro FIR con Ventana](#1-fir-con-ventana)
+   - 3.2 [Filtro Butterworth](#2-butterworth)
+   - 3.3 [Filtro Chebyshev Tipo I](#3-chebyshev-tipo-i)
+   - 3.4 [Filtro Notch](#4-notch)
+4. [Metodología](#metodología)
+5. [Resultados y Análisis](#resultados-y-análisis)
+   - 5.1 [Señal ECG Basal](#señal-1-ecg-basal)
+   - 5.2 [Señal ECG Agitado](#señal-2-ecg-agitado)
+   - 5.3 [Señal EMG Bíceps Libre](#señal-3-emg-bíceps-libre)
+   - 5.4 [Señal EMG Bíceps Limitado](#señal-4-emg-bíceps-limitado)
+6. [Conclusiones](#conclusiones)
+7. [Bibliografía](#bibliografía)
 
-### EMG: 
-##### Al tratarse de EMG de superficie, se usan filtros pasa banda de 20Hz a 400-450 Hz [3]. De igual manera que en el caso de las señales ECG, también se opta por el uso de ventanas Hamming.
+---
 
-### FILTROS
+## Introducción
 
-#### 1. FIR con ventana
+En el procesamiento de señales biomédicas, como ECG, EEG o EMG, el ruido y los artefactos pueden interferir con la interpretación clínica y la recuperación de parámetros diagnósticos. El filtrado digital es actualmente el método principal para eliminar la señal no deseada causada por interferencias externas, como el ruido de la línea eléctrica, la contracción muscular o la deriva de baja frecuencia [1].
 
-- Diseño: Apartir de la respuesta ideal se debe truncarla con una ventana como Hamming, Hann o Blackman para obtener coeficientes finitos.
+Los filtros están diseñados para preservar las características deseadas de la señal y mejorar la relación señal-ruido (SNR), lo que facilita la visualización y el procesamiento automático. Además, el filtrado computacional ofrece una solución mejorada en comparación con los métodos analógicos convencionales, puesto que es más adaptable al ajustar la frecuencia de corte, la pendiente y el orden del filtro sin necesidad de modificar el hardware [4]. Esto produce un procesamiento más preciso y reproducible, especialmente ventajoso en entornos clínicos y de investigación, donde la calidad de la señal influye directamente en la precisión del diagnóstico y el desarrollo de nuevos dispositivos biomédicos.
 
-- Parámetros típicos: Orden N, dependiendo de la transición deseada; por ejemplo, la ventana Hamming reduce lóbulos laterales.
+En el caso específico de este laboratorio, se procesaron dos señales ECG y dos señales EMG superficiales, evaluando el desempeño de cuatro tipos de filtros digitales diferentes.
 
-- Resultado esperado: Respuesta en frecuencia controlada, posible fase lineal, útil cuando se requiere conservación de la morfología de la señal.
+---
 
-- Para filtrar ECG: Muy bueno, fase lineal preserva morfología de P, QRS y T.
+## Señales Biomédicas
 
-- Para filtrar EMG: Bueno también, especialmente para evitar distorsión de fase, para EMG de bandas altas se puede requerir orden mayor para transiciones nítidas.
+### Electrocardiograma (ECG)
 
-#### 2. Butterworth
+El ECG es una señal biomédica que registra la actividad eléctrica del corazón desde la superficie de la piel. La señal ECG típicamente contiene ondas características denominadas P, QRS y T, que representan diferentes fases del ciclo cardíaco [7]. El rango de frecuencias de interés en señales ECG se encuentra entre 0.5 Hz y 150 Hz, siendo el complejo QRS el componente de mayor amplitud y contenido en alta frecuencia [8].
 
-- Diseño: Transformación bilineal para llevarlo a dominio discreto. Utilizando el concepto de diseño IIR y la transformada. 
+**Fuentes de ruido en ECG:**
 
-- Parámetros típicos: Orden n, comúnmente 2–6, frecuencias de corte según la aplicación.
+Las señales ECG están sujetas a diversos tipos de ruido y artefactos que pueden comprometer su calidad [7]:
 
-- Resultado esperado: Buena atenuación fuera de banda con pendiente moderada, sin oscilaciones en la banda pasante.
+- **Deriva de línea base (Baseline Wander):** Ruido de baja frecuencia (0.5-0.6 Hz) causado por la respiración y movimientos del paciente
+- **Interferencia de línea eléctrica (Powerline Interference - PLI):** Ruido de 50/60 Hz proveniente de la red eléctrica
+- **Artefactos musculares (Muscle Artifacts):** Señales EMG de alta frecuencia (>100 Hz) generadas por contracciones musculares involuntarias
+- **Artefactos de movimiento de electrodos:** Señales transitorias de alta amplitud causadas por contacto deficiente entre el electrodo y la piel
 
-- Para filtrar ECG: Bueno si se busca un filtro eficiente y con pocas operaciones o baja latencia. No tiene fase lineal, ya que puede distorsionar la morfología si se aplica causalmente.
+Para el filtrado de señales ECG, se recomienda el uso de filtros de duración finita (FIR) con ventana tipo Hamming, debido a su fase lineal que preserva la morfología de las ondas características [1, 2].
 
-- Para filtrar EMG: Adecuado por su eficiencia computacional, filtrar EMG en tiempo real conviene con IIR de orden bajo-medio.
+### Electromiografía (EMG)
 
-#### 3. Chebyshev Tipo I
+La electromiografía superficial (sEMG) registra la actividad eléctrica generada por la contracción muscular desde la superficie de la piel. La señal EMG es el resultado de la suma de potenciales de acción de múltiples unidades motoras activas durante la contracción muscular [9]. El espectro de frecuencias de las señales EMG superficiales se encuentra típicamente entre 10 Hz y 500 Hz, con la mayor parte de la energía concentrada entre 20 Hz y 400 Hz [8, 9].
 
-- Diseño: Se eligen orden y ripple (dB) para controlar la ondulación y la pendiente.
+**Fuentes de ruido en EMG:**
 
-- Parámetros típicos: Orden n y ripple en dB, lo cumún es 0.5–1 dB.
+Las señales EMG de superficie están contaminadas por diversos tipos de ruido [9]:
 
-- Resultado esperado: Para un mismo orden, ofrece pendiente más pronunciada que Butterworth, pero con ondulación en la banda pasante.
+- **Ruido de baja frecuencia:** Artefactos de movimiento y deriva de línea base (<20 Hz)
+- **Interferencia de línea eléctrica:** Ruido a 50/60 Hz de fuentes de alimentación
+- **Ruido blanco gaussiano:** Ruido de alta frecuencia (>500 Hz) proveniente de la instrumentación electrónica
+- **Crosstalk:** Interferencia de músculos adyacentes
+- **Ruido de interfaz electrodo-piel:** Causado por cambios en la impedancia del contacto
 
-- Para filtrar ECG: Se debe usar con precaución, ya que la ondulación puede alterar la morfología, si se aplica filtfilt y ripple muy pequeño, puede ser aceptable.
+Para el procesamiento de señales EMG de superficie, se emplean filtros pasa banda con frecuencias de corte de 20 Hz a 400-450 Hz [3]. De igual manera que en el caso de las señales ECG, también se opta por el uso de ventanas Hamming para filtros FIR.
 
-- Para filtrar EMG: Útil cuando se necesita mayor rechazo fuera de banda con orden bajo como separar componentes cercanas en frecuencia, pero la distorsión de fase peligraría.
+---
 
-#### 4. Notch
+## Fundamentos del Filtrado Digital
 
-- Diseño: Diseño de un filtro resonante con atenuación en 50 Hz o 60 Hz y ancho determinado como Q = 30–50 para obtener una lámina angosta.
+### 1. FIR con Ventana
 
-- Parámetros típicos: Frecuencia notch de 50 o 60 Hz, factor de calidad Q o ancho en Hz.
+**Diseño:** A partir de la respuesta ideal se debe truncarla con una ventana como Hamming, Hann o Blackman para obtener coeficientes finitos. La ventana Hamming es ampliamente utilizada debido a su capacidad para reducir los lóbulos laterales en la respuesta en frecuencia [2].
 
-- Resultado esperado: Atenuación fuerte en la frecuencia de la red sin afectar mucho las frecuencias adyacentes si Q alto.
+**Parámetros típicos:** 
+- Orden N, dependiendo de la transición deseada
+- Tipo de ventana (Hamming, Hann, Blackman)
+- Frecuencias de corte normalizadas respecto a la frecuencia de Nyquist
 
-- Para filtrar ECG: Frecuentemente imprescindible para eliminar 50-60 Hz, preferible usar notch con cuidado para no eliminar contenido útil si la señal tiene componentes en esa banda.
+**Características:**
+- **Fase lineal:** Preserva la morfología temporal de la señal
+- **Estabilidad:** Siempre estable por ser no recursivo
+- **Costo computacional:** Mayor número de operaciones que filtros IIR
 
-- Para filtrar EMG: Igualmente útil, ya que la señal EMG suele contener energía en banda 50–300 Hz, así que un notch estrecho es mejor para no eliminar demasiada información.
+**Aplicación para ECG:** Muy bueno, la fase lineal preserva la morfología de las ondas P, QRS y T, crucial para análisis clínico [1].
 
-### Razonamiento para la elección del mejor filtro para las señales
+**Aplicación para EMG:** Bueno también, especialmente para evitar distorsión de fase. Para EMG de bandas altas se puede requerir orden mayor para transiciones nítidas [3].
 
-- Preservación de morfología entonces es preferinle elegir un filtro FIR lineal de fase o aplicar filtfilt con IIR en análisis offline.
+### 2. Butterworth
 
-- Recursos computacionales o latencia entonces IIR como Butterworth o Chebyshev, ya que ofrecen mayor eficiencia, es una buena elección para procesamiento en tiempo real.
+**Diseño:** Filtro IIR diseñado mediante transformación bilineal para llevarlo al dominio discreto. Se caracteriza por tener una respuesta maximamente plana en la banda pasante [4].
 
-- Rechazo de banda específica como línea eléctrica entonces Notch o combinación notch + bandpass.
+**Parámetros típicos:** 
+- Orden n, comúnmente 2–6
+- Frecuencias de corte según la aplicación
+- Tipo de filtro (pasa-bajo, pasa-alto, pasa-banda)
 
-- Necesidad de transición muy abrupta entonces Chebyshev o Ellíptico si es que se tolera la ondulación.
+**Características:**
+- **Respuesta en frecuencia:** Suave transición, sin ondulaciones en banda pasante
+- **Fase:** No lineal (puede distorsionar la morfología)
+- **Eficiencia:** Requiere menos operaciones que FIR para pendientes similares
 
-### Filtrado de las señales
+**Aplicación para ECG:** Bueno si se busca un filtro eficiente y con pocas operaciones o baja latencia. Puede distorsionar la morfología si se aplica causalmente, pero el uso de `filtfilt` (filtrado bidireccional) mitiga este problema [8].
 
-### BORRA ESTE MENSAJE XD, describí 4 filtros, puedes usar esos 4, pero normal si usas otros, si es que los cambias tmb deberas cambiar la descripción y poner los 4 filtros que estarás usando.
+**Aplicación para EMG:** Adecuado por su eficiencia computacional. Filtrar EMG en tiempo real conviene con IIR de orden bajo-medio [8].
 
-#### Señal 1 ECG 
+### 3. Chebyshev Tipo I
 
-| FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
-|------|-----------------|-----------------|------|
-| XD   | XD | XD | XD |
+**Diseño:** Filtro IIR que permite ondulación (ripple) en la banda pasante a cambio de una transición más abrupta entre banda pasante y de rechazo [4].
 
-#### Resultados
+**Parámetros típicos:** 
+- Orden n y ripple en dB
+- Lo común es 0.5–1 dB de ripple
+- Frecuencias de corte
 
-##### El filtro ideal escogido fue...... en comparación al filtro 2 es mejor porque, en comparación al firltro 3 es mejor porque....., en comparación al firltro 4 es mejor porque
+**Características:**
+- **Pendiente:** Más pronunciada que Butterworth para el mismo orden
+- **Ondulación:** Presenta ripple en banda pasante
+- **Selectividad:** Mayor rechazo en banda de atenuación
 
-#### Señal 2 ECG 
+**Aplicación para ECG:** Se debe usar con precaución, ya que la ondulación puede alterar la morfología. Si se aplica `filtfilt` y ripple muy pequeño, puede ser aceptable.
 
-| FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
-|------|-----------------|-----------------|------|
-| XD   | XD | XD | XD |
+**Aplicación para EMG:** Útil cuando se necesita mayor rechazo fuera de banda con orden bajo, como para separar componentes cercanas en frecuencia. La distorsión de fase debe considerarse [9].
 
-#### Resultados
+### 4. Notch
 
-##### El filtro ideal escogido fue...... en comparación al filtro 2 es mejor porque, en comparación al firltro 3 es mejor porque....., en comparación al firltro 4 es mejor porque
+**Diseño:** Filtro resonante con atenuación en 50 Hz o 60 Hz y ancho determinado. El factor de calidad Q = 30–50 permite obtener una atenuación estrecha y selectiva [7].
 
-#### Señal 3 EMG
+**Parámetros típicos:** 
+- Frecuencia notch de 50 o 60 Hz (según región)
+- Factor de calidad Q o ancho de banda en Hz
+- Profundidad de atenuación
 
-| FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
-|------|-----------------|-----------------|------|
-| XD   | XD | XD | XD |
+**Características:**
+- **Selectividad:** Alta atenuación en frecuencia específica
+- **Ancho de banda:** Estrecho para preservar frecuencias adyacentes
+- **Aplicación:** Específica para interferencia de línea eléctrica
 
-#### Resultados
+**Aplicación para ECG:** Frecuentemente imprescindible para eliminar 50-60 Hz. Preferible usar notch con cuidado para no eliminar contenido útil si la señal tiene componentes en esa banda [7, 8].
 
-##### El filtro ideal escogido fue...... en comparación al filtro 2 es mejor porque, en comparación al firltro 3 es mejor porque....., en comparación al firltro 4 es mejor porque
+**Aplicación para EMG:** Igualmente útil, ya que la señal EMG suele contener energía en banda 50–300 Hz, así que un notch estrecho es mejor para no eliminar demasiada información [9].
 
-#### Señal 4 EMG
+---
 
-| FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
-|------|-----------------|-----------------|------|
-| XD   | XD | XD | XD |
+## Metodología
 
-#### Resultados
+Para este laboratorio se procesaron cuatro señales biomédicas:
+- **ECG_basal:** Señal ECG en estado de reposo
+- **ECG_agitado:** Señal ECG durante actividad física
+- **EMG_bicep_libre:** Señal EMG del bíceps sin resistencia
+- **EMG_bicep_limitado:** Señal EMG del bíceps con resistencia
 
-##### El filtro ideal escogido fue...... en comparación al filtro 2 es mejor porque, en comparación al firltro 3 es mejor porque....., en comparación al firltro 4 es mejor porque
+Todas las señales fueron adquiridas con una frecuencia de muestreo de **fs = 1000 Hz**.
 
-## Bibliografía:
-##### [1] Oldřich Ondráček, Jozef Púčik, and E. Cocherová, “FILTERS FOR ECG DIGITAL SIGNAL PROCESSING,” Trends in Biomedical Engineering” Setiembre 7 - 9, 2005, University of ZilinaTrends in Biomedical Engineering” September 7 - 9, 2005, University of Zilina, pp. 91–96, En. 2005, Available: https://www.researchgate.net/publication/234047548_FILTERS_FOR_ECG_DIGITAL_SIGNAL_PROCESSING
+**Parámetros de filtrado utilizados:**
 
-##### [2] I. A. Sulaiman, H. M. Hassan, M. Danish, M. Singh, P. K. Singh, and M. Rajoriya, “Design, comparison and analysis of low pass FIR filter using window techniques method,” Materials Today: Proceedings, Dic. 2020, doi: https://doi.org/10.1016/j.matpr.2020.10.952.
+Para señales ECG:
+- Filtro pasa-banda: 0.5 - 40 Hz
+- Orden FIR: 101
+- Orden Butterworth/Chebyshev: 4
+- Ripple Chebyshev: 0.5 dB
 
-##### [3] “EMG Signal Processing: Key Techniques and Practical Recommendations – Noraxon,” Noraxon.com, 2025. https://www.noraxon.com/article/emg-signal-processing-key-techniques-and-practical-recommendations/
+Para señales EMG:
+- Filtro pasa-banda: 20 - 450 Hz
+- Orden FIR: 101
+- Orden Butterworth/Chebyshev: 4
+- Ripple Chebyshev: 0.5 dB
 
-##### [4] A. S. Bhat, Biomedical Signal Processing: Principles and Techniques. CRC Press, 2017.
+Para filtro Notch (ambas señales):
+- Frecuencia central: 60 Hz
+- Factor de calidad Q: 30
 
-##### [5] J. G. Webster, Medical Instrumentation: Application and Design, 4th ed. Hoboken, NJ, USA: Wiley, 2010.
+Se aplicó filtrado bidireccional mediante la función `filtfilt` para todos los filtros IIR con el objetivo de eliminar la distorsión de fase.
 
-##### [6] P. Laguna, R. G. Mark, A. Goldberg, and G. B. Moody, “A database for evaluation of algorithms for measurement of QT and other waveform intervals in the ECG,” Computers in Cardiology, vol. 24, pp. 673–676, 1997.
-‌
+---
+
+## Resultados y Análisis
+
+### Señal 1: ECG Basal
+
+#### Comparación de Filtros
+
+![ECG Basal - FIR](/Otros/ECG_basal_FIR.png)
+
+![ECG Basal - Butterworth](/Otros/ECG_basal_Butter.png)
+
+![ECG Basal - Chebyshev](/Otros/ECG_basal_Cheby.png)
+
+![ECG Basal - Notch](/Otros/ECG_basal_Notch.png)
+
+#### Análisis
+
+**Filtro seleccionado:** FIR con ventana Hamming
+
+**Justificación:**
+
+- **vs. Butterworth:** Aunque el filtro Butterworth es computacionalmente más eficiente, el filtro FIR ofrece fase lineal que preserva mejor la morfología de las ondas P, QRS y T. En análisis clínico de ECG en reposo, la preservación exacta de la forma de onda es crucial para detectar anomalías sutiles.
+
+- **vs. Chebyshev:** El filtro Chebyshev presenta ondulaciones en la banda pasante que pueden introducir distorsiones en la amplitud de las ondas características del ECG. Para señales en estado basal donde se requiere alta fidelidad, estas ondulaciones son indeseables.
+
+- **vs. Notch:** El filtro Notch solo elimina la interferencia de 60 Hz pero no atenúa el ruido de baja frecuencia (deriva de línea base) ni el ruido muscular de alta frecuencia. Es útil como complemento pero insuficiente por sí solo.
+
+---
+
+### Señal 2: ECG Agitado
+
+#### Comparación de Filtros
+
+![ECG Agitado - FIR](/Otros/ECG_agitado_FIR.png)
+
+![ECG Agitado - Butterworth](/Otros/ECG_agitado_Butter.png)
+
+![ECG Agitado - Chebyshev](/Otros/ECG_agitado_Cheby.png)
+
+![ECG Agitado - Notch](/Otros/ECG_agitado_Notch.png)
+
+#### Análisis
+
+**Filtro seleccionado:** FIR con ventana Hamming
+
+**Justificación:**
+
+- **vs. Butterworth:** En señales ECG durante actividad física, los artefactos de movimiento y ruido muscular son más prominentes. El filtro FIR, al tener fase lineal y ser no recursivo, maneja mejor estos artefactos transitorios sin introducir oscilaciones (ringing) que los filtros IIR podrían generar.
+
+- **vs. Chebyshev:** La transición más abrupta del Chebyshev podría ser ventajosa para rechazar ruido fuera de banda, pero las ondulaciones en banda pasante pueden amplificar componentes de ruido que coincidan con las frecuencias de ripple, lo cual es problemático en señales con alto contenido de artefactos.
+
+- **vs. Notch:** Similar al caso anterior, elimina solo la componente de 60 Hz pero no es suficiente para manejar el ruido de movimiento y artefactos musculares presentes durante la actividad física.
+
+---
+
+### Señal 3: EMG Bíceps Libre
+
+#### Comparación de Filtros
+
+![EMG Bíceps Libre - FIR](/Otros/EMG_bicep_libre_FIR.png)
+
+![EMG Bíceps Libre - Butterworth](/Otros/EMG_bicep_libre_Butter.png)
+
+![EMG Bíceps Libre - Chebyshev](/Otros/EMG_bicep_libre_Cheby.png)
+
+![EMG Bíceps Libre - Notch](/Otros/EMG_bicep_libre_Notch.png)
+
+#### Análisis
+
+**Filtro seleccionado:** Butterworth
+
+**Justificación:**
+
+- **vs. FIR:** Para señales EMG, donde el análisis se centra principalmente en características espectrales (frecuencia media, frecuencia mediana) y de amplitud (RMS) en lugar de morfología temporal precisa, la fase lineal no es tan crítica. El filtro Butterworth ofrece mejor eficiencia computacional con desempeño aceptable, especialmente útil para aplicaciones en tiempo real.
+
+- **vs. Chebyshev:** Aunque el Chebyshev proporciona mejor rechazo fuera de banda, las ondulaciones en banda pasante pueden afectar la estimación de parámetros espectrales de la señal EMG. En contracciones libres sin mayor contaminación, la respuesta plana del Butterworth es más adecuada.
+
+- **vs. Notch:** El filtro Notch aislado no proporciona el filtrado pasa-banda necesario para eliminar artefactos de movimiento de baja frecuencia (<20 Hz) y ruido electrónico de alta frecuencia (>450 Hz). Una combinación Notch + Butterworth pasa-banda sería ideal, pero Butterworth pasa-banda solo es suficiente si la interferencia de 60 Hz no es dominante.
+
+---
+
+### Señal 4: EMG Bíceps Limitado
+
+#### Comparación de Filtros
+
+![EMG Bíceps Limitado - FIR](/Otros/EMG_bicep_limitado_FIR.png)
+
+![EMG Bíceps Limitado - Butterworth](/Otros/EMG_bicep_limitado_Butter.png)
+
+![EMG Bíceps Limitado - Chebyshev](/Otros/EMG_bicep_limitado_Cheby.png)
+
+![EMG Bíceps Limitado - Notch](/Otros/EMG_bicep_limitado_Notch.png)
+
+#### Análisis
+
+**Filtro seleccionado:** Butterworth
+
+**Justificación:**
+
+- **vs. FIR:** Al igual que en la señal EMG libre, la fase lineal no es crítica para el análisis de parámetros de fatiga muscular. El Butterworth ofrece un balance óptimo entre rendimiento y eficiencia computacional, lo cual es valioso en estudios de resistencia donde se procesan largos segmentos de señal.
+
+- **vs. Chebyshev:** En condiciones de contracción con resistencia, donde la señal EMG tiene mayor amplitud y mejor SNR, el Butterworth es suficiente. El Chebyshev sería más útil en escenarios con fuerte interferencia externa que requiera mayor rechazo en banda de atenuación.
+
+- **vs. Notch:** Similar al caso anterior, el filtro Notch es insuficiente por sí solo. Sin embargo, en ambientes con fuerte interferencia de línea eléctrica, una cascada de Notch + Butterworth pasa-banda sería la configuración óptima.
+
+---
+
+## Conclusiones
+
+El presente estudio evaluó cuatro tipos de filtros digitales aplicados a señales ECG y EMG, demostrando que la elección del filtro óptimo depende del tipo de señal y la aplicación específica:
+
+1. **Para señales ECG:** Los filtros FIR con ventana Hamming son preferibles debido a su fase lineal, que preserva la morfología de las ondas características (P, QRS, T) esencial para el diagnóstico clínico. Esto se confirma tanto en condiciones basales como durante actividad física.
+
+2. **Para señales EMG:** Los filtros Butterworth ofrecen el mejor compromiso entre eficiencia computacional y calidad de filtrado, siendo adecuados para análisis de fatiga muscular y control de prótesis donde la fase lineal no es crítica.
+
+3. **Filtros Chebyshev:** Útiles en escenarios específicos donde se requiere mayor selectividad en frecuencia, pero deben usarse con cuidado debido a las ondulaciones en banda pasante que pueden afectar la interpretación de parámetros clínicos.
+
+4. **Filtros Notch:** Indispensables como complemento para eliminar interferencia de línea eléctrica (50/60 Hz), pero insuficientes como solución única. Se recomienda su uso en cascada con filtros pasa-banda.
+
+5. **Consideraciones prácticas:** 
+   - Para análisis offline: FIR (ECG) y Butterworth con `filtfilt` (EMG)
+   - Para procesamiento en tiempo real: Butterworth o Chebyshev de orden bajo
+   - En ambientes con alta interferencia eléctrica: Combinación de Notch + filtro pasa-banda
+
+Los resultados obtenidos demuestran la importancia de seleccionar el filtro apropiado según los requisitos específicos de cada aplicación biomédica, balanceando entre preservación de características de la señal, eficiencia computacional y rechazo de ruido.
+
+---
+
+## Bibliografía
+
+[1] O. Ondráček, J. Púčik, and E. Cocherová, "Filters for ECG digital signal processing," *Trends in Biomedical Engineering*, pp. 91–96, 2005. Available: https://www.researchgate.net/publication/234047548_FILTERS_FOR_ECG_DIGITAL_SIGNAL_PROCESSING
+
+[2] I. A. Sulaiman, H. M. Hassan, M. Danish, M. Singh, P. K. Singh, and M. Rajoriya, "Design, comparison and analysis of low pass FIR filter using window techniques method," *Materials Today: Proceedings*, Dec. 2020, doi: https://doi.org/10.1016/j.matpr.2020.10.952
+
+[3] "EMG Signal Processing: Key Techniques and Practical Recommendations," Noraxon.com, 2025. Available: https://www.noraxon.com/article/emg-signal-processing-key-techniques-and-practical-recommendations/
+
+[4] A. S. Bhat, *Biomedical Signal Processing: Principles and Techniques*. CRC Press, 2017.
+
+[5] J. G. Webster, *Medical Instrumentation: Application and Design*, 4th ed. Hoboken, NJ, USA: Wiley, 2010.
+
+[6] P. Laguna, R. G. Mark, A. Goldberg, and G. B. Moody, "A database for evaluation of algorithms for measurement of QT and other waveform intervals in the ECG," *Computers in Cardiology*, vol. 24, pp. 673–676, 1997.
+
+[7] L. Sörnmo and P. Laguna, *Bioelectrical Signal Processing in Cardiac and Neurological Applications*. Burlington, MA: Elsevier Academic Press, 2005.
+
+[8] C. J. De Luca, L. D. Gilmore, M. Kuznetsov, and S. H. Roy, "Filtering the surface EMG signal: Movement artifact and baseline noise contamination," *Journal of Biomechanics*, vol. 43, no. 8, pp. 1573–1579, 2010.
+
+[9] M. Boyer, L. Bouyer, J. S. Roy, and A. Campeau-Lecours, "Reducing Noise, Artifacts and Interference in Single-Channel EMG Signals: A Review," *Sensors*, vol. 23, no. 6, p. 2927, 2023.
