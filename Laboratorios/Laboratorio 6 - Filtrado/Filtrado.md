@@ -12,13 +12,14 @@
    - 3.3 [Filtro Chebyshev Tipo I](#3-chebyshev-tipo-i)
    - 3.4 [Filtro Notch](#4-notch)
 4. [Metodología](#metodología)
-5. [Resultados y Análisis](#resultados-y-análisis)
+5. [Ploteo](#Ploteo en Python)
+6. [Resultados y Análisis](#resultados-y-análisis)
    - 5.1 [Señal ECG Basal](#señal-1-ecg-basal)
    - 5.2 [Señal ECG Agitado](#señal-2-ecg-agitado)
    - 5.3 [Señal EMG Bíceps Libre](#señal-3-emg-bíceps-libre)
    - 5.4 [Señal EMG Bíceps Limitado](#señal-4-emg-bíceps-limitado)
-6. [Conclusiones](#conclusiones)
-7. [Bibliografía](#bibliografía)
+7. [Conclusiones](#conclusiones)
+8. [Bibliografía](#bibliografía)
 
 ---
 
@@ -172,6 +173,46 @@ Para filtro Notch (ambas señales):
 - Factor de calidad Q: 30
 
 Se aplicó filtrado bidireccional mediante la función `filtfilt` para todos los filtros IIR con el objetivo de eliminar la distorsión de fase.
+
+---
+
+## Ploteo en Python
+
+El código de procesamiento se encuentra en el archivo `Laboratorios/Laboratorio 6 - Filtrado/plot.py` y fue desarrollado en Python utilizando las bibliotecas `numpy`, `pandas`, `matplotlib` y `scipy.signal`.
+
+### Estructura del Script
+
+El script implementa un procesamiento secuencial de las cuatro señales biomédicas, aplicando automáticamente los cuatro tipos de filtros a cada una. La estructura general sigue el siguiente flujo:
+
+1. **Lectura de datos:** Las señales se cargan desde archivos `.txt` con formato tabular separado por tabulaciones. Se extraen específicamente los valores de la columna `A1` que contiene la señal analógica de interés.
+
+2. **Detección automática de tipo de señal:** El script identifica si la señal es ECG o EMG mediante el nombre del archivo, ajustando automáticamente las frecuencias de corte del filtrado pasa-banda:
+   - **ECG:** 0.5 - 40 Hz
+   - **EMG:** 20 - 450 Hz
+
+3. **Aplicación de filtros:** Para cada señal, se aplican secuencialmente los cuatro filtros:
+
+   - **FIR con ventana Hamming:** Se utiliza `signal.firwin()` con orden 101 y configuración pasa-banda (`pass_zero=False`)
+   
+   - **Butterworth:** Se diseña con `signal.butter()` de orden 4 y tipo pasa-banda
+   
+   - **Chebyshev Tipo I:** Se implementa con `signal.cheby1()` de orden 4 y ripple de 0.5 dB
+   
+   - **Notch:** Se diseña con `signal.iirnotch()` con frecuencia central de 60 Hz y factor de calidad Q=30
+
+4. **Filtrado bidireccional:** Todos los filtros se aplican mediante `signal.filtfilt()`, que realiza un filtrado hacia adelante y hacia atrás, eliminando la distorsión de fase y resultando en un filtro de fase cero.
+
+5. **Visualización y almacenamiento:** Para cada combinación señal-filtro, se genera un gráfico de dos subplots:
+   - **Subplot superior:** Señal original (primeros 5 segundos)
+   - **Subplot inferior:** Señal filtrada (primeros 5 segundos)
+   
+   Los gráficos se guardan automáticamente como archivos `.png` con nomenclatura `{nombre_señal}_{nombre_filtro}.png` en el directorio especificado.
+
+### Consideraciones de Implementación
+
+El uso de `filtfilt()` es crucial para aplicaciones biomédicas offline, ya que duplica el orden efectivo del filtro (por ejemplo, un Butterworth de orden 4 se convierte en orden 8) y elimina el retardo de grupo, preservando la alineación temporal de los eventos fisiológicos en la señal.
+
+La normalización de frecuencias respecto a la frecuencia de Nyquist (fs/2 = 500 Hz) es necesaria para el diseño correcto de los filtros digitales en `scipy.signal`.
 
 ---
 
