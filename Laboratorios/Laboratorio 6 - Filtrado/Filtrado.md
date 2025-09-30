@@ -70,6 +70,8 @@
 
 ### Filtrado de las señales
 
+### BORRA ESTE MENSAJE XD, describí 4 filtros, puedes usar esos 4, pero normal si usas otros, si es que los cambias tmb deberas cambiar la descripción y poner los 4 filtros que estarás usando.
+
 #### Señal 1 ECG 
 
 | FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
