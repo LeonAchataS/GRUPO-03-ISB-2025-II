@@ -70,12 +70,45 @@
 
 ### Filtrado de las señales
 
-#### Señal 1(ECG O EMG)
+#### Señal 1 ECG 
 
 | FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
 |------|-----------------|-----------------|------|
 | XD   | XD | XD | XD |
 
+#### Resultados
+
+##### El filtro ideal escogido fue...... en comparación al filtro 2 es mejor porque, en comparación al firltro 3 es mejor porque....., en comparación al firltro 4 es mejor porque
+
+#### Señal 2 ECG 
+
+| FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
+|------|-----------------|-----------------|------|
+| XD   | XD | XD | XD |
+
+#### Resultados
+
+##### El filtro ideal escogido fue...... en comparación al filtro 2 es mejor porque, en comparación al firltro 3 es mejor porque....., en comparación al firltro 4 es mejor porque
+
+#### Señal 3 EMG
+
+| FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
+|------|-----------------|-----------------|------|
+| XD   | XD | XD | XD |
+
+#### Resultados
+
+##### El filtro ideal escogido fue...... en comparación al filtro 2 es mejor porque, en comparación al firltro 3 es mejor porque....., en comparación al firltro 4 es mejor porque
+
+#### Señal 4 EMG
+
+| FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
+|------|-----------------|-----------------|------|
+| XD   | XD | XD | XD |
+
+#### Resultados
+
+##### El filtro ideal escogido fue...... en comparación al filtro 2 es mejor porque, en comparación al firltro 3 es mejor porque....., en comparación al firltro 4 es mejor porque
 
 ## Bibliografía:
 ##### [1] Oldřich Ondráček, Jozef Púčik, and E. Cocherová, “FILTERS FOR ECG DIGITAL SIGNAL PROCESSING,” Trends in Biomedical Engineering” Setiembre 7 - 9, 2005, University of ZilinaTrends in Biomedical Engineering” September 7 - 9, 2005, University of Zilina, pp. 91–96, En. 2005, Available: https://www.researchgate.net/publication/234047548_FILTERS_FOR_ECG_DIGITAL_SIGNAL_PROCESSING
