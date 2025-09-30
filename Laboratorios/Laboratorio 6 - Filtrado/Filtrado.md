@@ -8,6 +8,66 @@
 ### EMG: 
 ##### Al tratarse de EMG de superficie, se usan filtros pasa banda de 20Hz a 400-450 Hz [3]. De igual manera que en el caso de las señales ECG, también se opta por el uso de ventanas Hamming.
 
+### FILTROS
+
+#### 1. FIR con ventana
+
+- Diseño: Apartir de la respuesta ideal se debe truncarla con una ventana como Hamming, Hann o Blackman para obtener coeficientes finitos.
+
+- Parámetros típicos: Orden N, dependiendo de la transición deseada; por ejemplo, la ventana Hamming reduce lóbulos laterales.
+
+- Resultado esperado: Respuesta en frecuencia controlada, posible fase lineal, útil cuando se requiere conservación de la morfología de la señal.
+
+- Para filtrar ECG: Muy bueno, fase lineal preserva morfología de P, QRS y T.
+
+- Para filtrar EMG: Bueno también, especialmente para evitar distorsión de fase, para EMG de bandas altas se puede requerir orden mayor para transiciones nítidas.
+
+#### 2. Butterworth
+
+- Diseño: Transformación bilineal para llevarlo a dominio discreto. Utilizando el concepto de diseño IIR y la transformada. 
+
+- Parámetros típicos: Orden n, comúnmente 2–6, frecuencias de corte según la aplicación.
+
+- Resultado esperado: Buena atenuación fuera de banda con pendiente moderada, sin oscilaciones en la banda pasante.
+
+- Para filtrar ECG: Bueno si se busca un filtro eficiente y con pocas operaciones o baja latencia. No tiene fase lineal, ya que puede distorsionar la morfología si se aplica causalmente.
+
+- Para filtrar EMG: Adecuado por su eficiencia computacional, filtrar EMG en tiempo real conviene con IIR de orden bajo-medio.
+
+#### 3. Chebyshev Tipo I
+
+- Diseño: Se eligen orden y ripple (dB) para controlar la ondulación y la pendiente.
+
+- Parámetros típicos: Orden n y ripple en dB, lo cumún es 0.5–1 dB.
+
+- Resultado esperado: Para un mismo orden, ofrece pendiente más pronunciada que Butterworth, pero con ondulación en la banda pasante.
+
+- Para filtrar ECG: Se debe usar con precaución, ya que la ondulación puede alterar la morfología, si se aplica filtfilt y ripple muy pequeño, puede ser aceptable.
+
+- Para filtrar EMG: Útil cuando se necesita mayor rechazo fuera de banda con orden bajo como separar componentes cercanas en frecuencia, pero la distorsión de fase peligraría.
+
+#### 4. Notch
+
+- Diseño: Diseño de un filtro resonante con atenuación en 50 Hz o 60 Hz y ancho determinado como Q = 30–50 para obtener una lámina angosta.
+
+- Parámetros típicos: Frecuencia notch de 50 o 60 Hz, factor de calidad Q o ancho en Hz.
+
+- Resultado esperado: Atenuación fuerte en la frecuencia de la red sin afectar mucho las frecuencias adyacentes si Q alto.
+
+- Para filtrar ECG: Frecuentemente imprescindible para eliminar 50-60 Hz, preferible usar notch con cuidado para no eliminar contenido útil si la señal tiene componentes en esa banda.
+
+- Para filtrar EMG: Igualmente útil, ya que la señal EMG suele contener energía en banda 50–300 Hz, así que un notch estrecho es mejor para no eliminar demasiada información.
+
+### Razonamiento para la elección del mejor filtro para las señales
+
+- Preservación de morfología entonces es preferinle elegir un filtro FIR lineal de fase o aplicar filtfilt con IIR en análisis offline.
+
+- Recursos computacionales o latencia entonces IIR como Butterworth o Chebyshev, ya que ofrecen mayor eficiencia, es una buena elección para procesamiento en tiempo real.
+
+- Rechazo de banda específica como línea eléctrica entonces Notch o combinación notch + bandpass.
+
+- Necesidad de transición muy abrupta entonces Chebyshev o Ellíptico si es que se tolera la ondulación.
+
 ## Bibliografía:
 ##### [1] Oldřich Ondráček, Jozef Púčik, and E. Cocherová, “FILTERS FOR ECG DIGITAL SIGNAL PROCESSING,” Trends in Biomedical Engineering” Setiembre 7 - 9, 2005, University of ZilinaTrends in Biomedical Engineering” September 7 - 9, 2005, University of Zilina, pp. 91–96, En. 2005, Available: https://www.researchgate.net/publication/234047548_FILTERS_FOR_ECG_DIGITAL_SIGNAL_PROCESSING
 
