@@ -12,14 +12,14 @@
    - 3.3 [Filtro Chebyshev Tipo I](#3-chebyshev-tipo-i)
    - 3.4 [Filtro Notch](#4-notch)
 4. [Metodología](#metodología)
-5. [Ploteo](#Ploteo en Python)
-6. [Resultados y Análisis](#resultados-y-análisis)
+5. [Ploteo en Python](#Ploteo-en-Python)
+7. [Resultados y Análisis](#resultados-y-análisis)
    - 5.1 [Señal ECG Basal](#señal-1-ecg-basal)
    - 5.2 [Señal ECG Agitado](#señal-2-ecg-agitado)
    - 5.3 [Señal EMG Bíceps Libre](#señal-3-emg-bíceps-libre)
    - 5.4 [Señal EMG Bíceps Limitado](#señal-4-emg-bíceps-limitado)
-7. [Conclusiones](#conclusiones)
-8. [Bibliografía](#bibliografía)
+8. [Conclusiones](#conclusiones)
+9. [Bibliografía](#bibliografía)
 
 ---
 
