@@ -68,6 +68,15 @@
 
 - Necesidad de transición muy abrupta entonces Chebyshev o Ellíptico si es que se tolera la ondulación.
 
+### Filtrado de las señales
+
+#### Señal 1(ECG O EMG)
+
+| FILTRO IDEAL | FILTRO 2 | FILTRO 3| FILTRO 4|
+|------|-----------------|-----------------|------|
+| XD   | XD | XD | XD |
+
+
 ## Bibliografía:
 ##### [1] Oldřich Ondráček, Jozef Púčik, and E. Cocherová, “FILTERS FOR ECG DIGITAL SIGNAL PROCESSING,” Trends in Biomedical Engineering” Setiembre 7 - 9, 2005, University of ZilinaTrends in Biomedical Engineering” September 7 - 9, 2005, University of Zilina, pp. 91–96, En. 2005, Available: https://www.researchgate.net/publication/234047548_FILTERS_FOR_ECG_DIGITAL_SIGNAL_PROCESSING
 
