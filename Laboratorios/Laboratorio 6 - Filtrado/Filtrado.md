@@ -117,4 +117,9 @@
 
 ##### [3] “EMG Signal Processing: Key Techniques and Practical Recommendations – Noraxon,” Noraxon.com, 2025. https://www.noraxon.com/article/emg-signal-processing-key-techniques-and-practical-recommendations/
 
+##### [4] A. S. Bhat, Biomedical Signal Processing: Principles and Techniques. CRC Press, 2017.
+
+##### [5] J. G. Webster, Medical Instrumentation: Application and Design, 4th ed. Hoboken, NJ, USA: Wiley, 2010.
+
+##### [6] P. Laguna, R. G. Mark, A. Goldberg, and G. B. Moody, “A database for evaluation of algorithms for measurement of QT and other waveform intervals in the ECG,” Computers in Cardiology, vol. 24, pp. 673–676, 1997.
 ‌
