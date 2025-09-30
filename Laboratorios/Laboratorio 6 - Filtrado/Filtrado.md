@@ -3,7 +3,16 @@
 
 
 ### ECG:
-###### Se suele empelar filtros de duración finita (FIR) [1] o filtros adaptativos cuando la señal no es estacionaria como es el caso de Hierarchical Kalman Filtering [2]. Para el uso de ventanas se recomienda el uso del tipo Hamming.
+##### Se suele empelar filtros de duración finita (FIR) [1]. Para el uso de ventanas se recomienda el uso del tipo Hamming [2].
 
 ### EMG: 
-##### Al tratarse de EMG de superficie, se usan filtros pasa banda de 20Hz a 400-450 Hz [4]. En cuanto a lo que es sa morfología de la señal envolvente, se opta por el uso de filtros UFIR o Kalman [5]. De igual manera que en el caso de las señales ECG, también se opta por el uso de ventanas Hamming.
+##### Al tratarse de EMG de superficie, se usan filtros pasa banda de 20Hz a 400-450 Hz [3]. De igual manera que en el caso de las señales ECG, también se opta por el uso de ventanas Hamming.
+
+## Bibliografía:
+##### [1] Oldřich Ondráček, Jozef Púčik, and E. Cocherová, “FILTERS FOR ECG DIGITAL SIGNAL PROCESSING,” Trends in Biomedical Engineering” Setiembre 7 - 9, 2005, University of ZilinaTrends in Biomedical Engineering” September 7 - 9, 2005, University of Zilina, pp. 91–96, En. 2005, Available: https://www.researchgate.net/publication/234047548_FILTERS_FOR_ECG_DIGITAL_SIGNAL_PROCESSING
+
+##### [2] I. A. Sulaiman, H. M. Hassan, M. Danish, M. Singh, P. K. Singh, and M. Rajoriya, “Design, comparison and analysis of low pass FIR filter using window techniques method,” Materials Today: Proceedings, Dic. 2020, doi: https://doi.org/10.1016/j.matpr.2020.10.952.
+
+##### [3] “EMG Signal Processing: Key Techniques and Practical Recommendations – Noraxon,” Noraxon.com, 2025. https://www.noraxon.com/article/emg-signal-processing-key-techniques-and-practical-recommendations/
+
+‌
