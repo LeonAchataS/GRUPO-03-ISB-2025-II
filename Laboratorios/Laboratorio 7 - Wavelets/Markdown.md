@@ -1,2 +1,2 @@
 ## Introducción
-##### g
+##### El procesamiento de señales biomédicas requiere técnicas avanzadas que eliminen el ruido sin comprometer valiosa información fisiológica. El filtrado por transformada wavelet, a diferencia de los filtros lineales convencionales, es un método extremadamente eficiente para procesar señales no estacionarias como ECG, EMG y EEG, capaz de operar simultáneamente en los dominios del tiempo y frecuencia. Esto resulta especialmente beneficioso en grabaciones biológicas, ya que los componentes de ruido, los artefactos y las fluctuaciones transitorias se superponen a los eventos de interés fisiológico.
