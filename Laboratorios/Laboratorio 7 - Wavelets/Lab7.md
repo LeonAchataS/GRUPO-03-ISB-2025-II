@@ -440,7 +440,7 @@ Los resultados obtenidos son prometedores para aplicaciones clínicas:
 
 ## 7. Conclusiones
 
-Este proyecto demostró exitosamente la implementación de un sistema de filtrado wavelet adaptativo para señales biomédicas ECG, EMG y EEG. Las principales conclusiones son:
+Este entregable demostró exitosamente la implementación de un sistema de filtrado wavelet adaptativo para señales biomédicas ECG, EMG y EEG. Las principales conclusiones son:
 
 1. **Efectividad comprobada**: SNR mejorado significativamente en todas las señales (ECG: 51.95 dB, EMG: 33.38 dB, EEG: 46.78 dB)
 
@@ -497,3 +497,4 @@ El filtrado wavelet se consolida como una técnica superior para procesamiento d
 [19] S. G. Chang, B. Yu, and M. Vetterli, "Adaptive wavelet thresholding for image denoising and compression," *IEEE Transactions on Image Processing*, vol. 9, no. 9, pp. 1532-1546, Sept. 2000. [Online]. Available: https://ieeexplore.ieee.org/document/862633
 
 [20] U. Raghavendra et al., "Automated identification of shockable and non-shockable life-threatening ventricular arrhythmias using convolutional neural network," *Future Generation Computer Systems*, vol. 79, pp. 952-959, 2018. [Online]. Available: https://www.sciencedirect.com/science/article/abs/pii/S0167739X17303229
+
