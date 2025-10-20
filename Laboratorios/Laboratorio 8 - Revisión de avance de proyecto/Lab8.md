@@ -347,5 +347,7 @@ Se realizó un análisis exploratorio del **Sujeto S001** procesando los 6 runs 
 ---
 **Curso:** Introducción a Señales Biomédicas  
 **Institución:** UPCH
+
 **Semestre:** 2025-II  
+
 ---
