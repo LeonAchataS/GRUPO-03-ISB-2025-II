@@ -338,17 +338,14 @@ Se realizó un análisis exploratorio del **Sujeto S001** procesando los 6 runs 
 
 ### Equipo de Desarrollo - Grupo 03
 
-| Integrante | Contribución | Porcentaje |
-|------------|--------------|------------|
-| Leon Achata | Investigación, documentación, análisis de datos | 33.33% |
-| Nicolas Arango | Preprocesamiento, visualizaciones, código | 33.33% |
-| Hans Navarro | Revisión bibliográfica, metodología, validación | 33.33% |
+| Integrante | Porcentaje |
+|------------|------------|
+| Leon Achata | 33.33% |
+| Nicolas Arango | 33.33% |
+| Hans Navarro | 33.33% |
 
 ---
-
 **Curso:** Introducción a Señales Biomédicas  
-**Institución:** [NOMBRE DE LA INSTITUCIÓN]  
+**Institución:** UPCH
 **Semestre:** 2025-II  
-**Última actualización:** Enero 2025
-
 ---
