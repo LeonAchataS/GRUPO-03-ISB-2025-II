@@ -318,6 +318,14 @@ Se realizó un análisis exploratorio del **Sujeto S001** procesando los 6 runs 
 
 ---
 
+## Video explicativo del proyecto
+
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=5072iaHtD1k"><img src="https://img.youtube.com/vi/5072iaHtD1k/0.jpg" width="250" height="140"></a>
+
+</div>
+
 ## Referencias Bibliográficas
 
 [1] World Health Organization: WHO, "Spinal cord injury," Apr. 16, 2024. [Online]. Available: https://www.who.int/news-room/fact-sheets/detail/spinal-cord-injury
